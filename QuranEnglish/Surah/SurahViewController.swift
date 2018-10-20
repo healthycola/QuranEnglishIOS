@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class SurahViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet private weak var tableView: UITableView! {
+    @IBOutlet fileprivate weak var tableView: UITableView! {
         didSet {
             tableView.estimatedRowHeight = 80;
         }
@@ -65,7 +65,8 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
         border.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             border.centerXAnchor.constraint(equalTo: borderContainer.centerXAnchor),
-            border.topAnchor.constraint(equalTo: borderContainer.topAnchor, constant: 10)
+            border.topAnchor.constraint(equalTo: borderContainer.topAnchor, constant: 5),
+            border.bottomAnchor.constraint(equalTo: borderContainer.bottomAnchor, constant: 5)
         ])
         
         let stackView = UIStackView(arrangedSubviews: [label, englishLabel, borderContainer])
@@ -115,7 +116,7 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -131,8 +132,8 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
         // *** Apply attribute to string ***
-        attributedString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
-        attributedString.addAttribute(NSFontAttributeName, value: UIFont.arabicFont(arabicFont: .AlNileBold, size: size), range: NSMakeRange(0, attributedString.length))
+        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+        attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont.arabicFont(arabicFont: .AlNileBold, size: size), range: NSMakeRange(0, attributedString.length))
         // *** Set Attributed String to your label ***
         return attributedString
     }
@@ -141,8 +142,8 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
         let attributedString = NSMutableAttributedString(string: text)
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
-        attributedString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
-        attributedString.addAttribute(NSFontAttributeName, value: UIFont.systemFont(ofSize: 14), range: NSMakeRange(0, attributedString.length))
+        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+        attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont.systemFont(ofSize: 14), range: NSMakeRange(0, attributedString.length))
         return attributedString
     }
 }
@@ -177,8 +178,8 @@ class SurahViewCell: UITableViewCell {
         paragraphStyle.lineSpacing = 2 // Whatever line spacing you want in points
         paragraphStyle.alignment = .right
         // *** Apply attribute to string ***
-        attributedString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
-        attributedString.addAttribute(NSFontAttributeName, value: UIFont.arabicFont(arabicFont: .AlBayan, size: 30), range: NSMakeRange(0, attributedString.length))
+        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+        attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont.currentArabicFont(), range: NSMakeRange(0, attributedString.length))
         // *** Set Attributed String to your label ***
         self.arabicText.attributedText = attributedString
     }
@@ -191,8 +192,8 @@ class SurahViewCell: UITableViewCell {
             // *** set LineSpacing property in points ***
             paragraphStyle.lineSpacing = 4 // Whatever line spacing you want in points
             // *** Apply attribute to string ***
-            attributedString.addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
-            attributedString.addAttribute(NSFontAttributeName, value: UIFont.englishFont(englishFont: .Palatino, size: 15), range: NSMakeRange(0, attributedString.length))
+            attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
+            attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont.currentEnglishFont(), range: NSMakeRange(0, attributedString.length))
             // *** Set Attributed String to your label ***
             self.translation.attributedText = attributedString
         } else {

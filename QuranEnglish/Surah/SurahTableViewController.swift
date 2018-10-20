@@ -10,12 +10,30 @@ import UIKit
 
 class SurahTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var quran: Quran!
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet fileprivate weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
+        
+        let settingsButton = UIBarButtonItem.getFontAwesomeBarButton(icon: .cog, size: 18)
+        settingsButton.target = self
+        settingsButton.action = #selector(showSettingsVC)
+        navigationItem.rightBarButtonItem = settingsButton
         
         navigationItem.title = "Surahs"
+        
+        SettingsManager.shared.addObserver(self)
+    }
+    
+    deinit {
+        SettingsManager.shared.removeObserver(self)
+    }
+    
+    @objc
+    private func showSettingsVC() {
+        let viewController = UIStoryboard(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "Settings") as! SettingsViewController
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,7 +56,27 @@ class SurahTableViewController: UIViewController, UITableViewDataSource, UITable
     }
 }
 
+extension SurahTableViewController: SettingsObserver {
+    func receiveNotification(updatedSetting: Setting) {
+        tableView.reloadData()
+    }
+}
+
 class SurahCell: UITableViewCell {
-    @IBOutlet weak var arabicLabel: UILabel!
-    @IBOutlet weak var translatedLabel: UILabel!
+    @IBOutlet weak var arabicLabel: UILabel! {
+        didSet {
+            arabicLabel.font = UIFont.currentArabicFont()
+        }
+    }
+    @IBOutlet weak var translatedLabel: UILabel! {
+        didSet {
+            translatedLabel.font = UIFont.currentEnglishFont()
+        }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        arabicLabel.font = UIFont.currentArabicFont()
+        translatedLabel.font = UIFont.currentEnglishFont()
+    }
 }

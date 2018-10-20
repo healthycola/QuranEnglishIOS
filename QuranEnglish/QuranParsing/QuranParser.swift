@@ -24,7 +24,7 @@ class QuranParser: DataParser<Surah> {
         }
     }
     
-    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+    override func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if elementName == "sura" {
             allElements[parser]!.append(currentSurah[parser]!.copy())
             currentSurah[parser]?.clear()

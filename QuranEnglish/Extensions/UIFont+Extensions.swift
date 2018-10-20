@@ -29,4 +29,19 @@ extension UIFont {
     static func englishFont(englishFont: EnglishFont, size: CGFloat) -> UIFont {
         return UIFont(name: englishFont.rawValue, size: size)!
     }
+    
+    static func printAllFonts() {
+        for family in UIFont.familyNames.sorted() {
+            let names = UIFont.fontNames(forFamilyName: family)
+            print("Family: \(family) Font names: \(names)")
+        }
+    }
+    
+    static func currentArabicFont() -> UIFont {
+        return UIFont.arabicFont(arabicFont: .AlNileBold, size: SettingsManager.shared.arabicFontSize)
+    }
+    
+    static func currentEnglishFont() -> UIFont {
+        return UIFont.englishFont(englishFont: .Palatino, size: SettingsManager.shared.englishFontSize)
+    }
 }

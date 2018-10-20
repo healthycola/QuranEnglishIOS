@@ -38,8 +38,7 @@ class LoadingScreen: UIViewController {
             
             let viewController = UIStoryboard(name: "Surah", bundle: nil).instantiateViewController(withIdentifier: "SurahTable") as! SurahTableViewController
             viewController.quran = QuranDocument.shared().quran!
-            let navController = UINavigationController(rootViewController: viewController)
-            self.present(navController, animated: true)
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
 }

@@ -1,0 +1,6 @@
+framework module Pods_QuranEnglish {
+  umbrella header "Pods-QuranEnglish-umbrella.h"
+
+  export *
+  module * { export * }
+}

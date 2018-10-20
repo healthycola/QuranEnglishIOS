@@ -42,6 +42,10 @@ class DataParser<T>: NSObject, XMLParserDelegate {
         fatalError("Not implemented")
     }
     
+    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        // No_op
+    }
+    
     func parserDidEndDocument(_ parser: XMLParser) {
         if let completion = completions[parser] {
             completion(allElements[parser]!)
