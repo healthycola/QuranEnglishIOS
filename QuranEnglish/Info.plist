@@ -4,6 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>AlBayan-Bold.otf</string>
+		<string>AlBayan.ttf</string>
 		<string>Alkalami-Regular.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
