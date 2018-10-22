@@ -14,15 +14,14 @@ class SurahTableViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
+        setupTheme()
         
+        navigationItem.hidesBackButton = true
         let settingsButton = UIBarButtonItem.getFontAwesomeBarButton(icon: .cog, size: 18)
         settingsButton.target = self
         settingsButton.action = #selector(showSettingsVC)
         navigationItem.rightBarButtonItem = settingsButton
-        
         navigationItem.title = "Surahs"
-        
         SettingsManager.shared.addObserver(self)
     }
     
@@ -43,6 +42,7 @@ class SurahTableViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "surahCell") as! SurahCell
         let metadata = quran.metadata
+        tableViewCell.setupForTheme(theme: SettingsManager.shared.theme)
         tableViewCell.arabicLabel.text = metadata[indexPath.row].arabicName
         tableViewCell.translatedLabel.text = metadata[indexPath.row].translatedName
         return tableViewCell
@@ -54,29 +54,40 @@ class SurahTableViewController: UIViewController, UITableViewDataSource, UITable
         viewController.surahIndex = indexPath.row
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    fileprivate func setupTheme() {
+        let theme = SettingsManager.shared.theme
+        view.backgroundColor = theme.backgroundColor
+        tableView.backgroundColor = theme.backgroundColor
+        navigationController?.navigationBar.barStyle = theme.barStyle
+        navigationController?.navigationBar.barTintColor  = theme.backgroundColor;
+        navigationController?.navigationBar.tintColor = theme.primaryTint
+    }
 }
 
 extension SurahTableViewController: SettingsObserver {
     func receiveNotification(updatedSetting: Setting) {
+        switch updatedSetting {
+        case .theme:
+            setupTheme()
+            break
+        default:
+            break
+        }
         tableView.reloadData()
     }
 }
 
 class SurahCell: UITableViewCell {
-    @IBOutlet weak var arabicLabel: UILabel! {
-        didSet {
-            arabicLabel.font = UIFont.currentArabicFont()
-        }
-    }
-    @IBOutlet weak var translatedLabel: UILabel! {
-        didSet {
-            translatedLabel.font = UIFont.currentEnglishFont()
-        }
+    func setupForTheme(theme: Theme) {
+//        contentView.backgroundColor = theme.backgroundColor
+        backgroundColor = theme.backgroundColor
+        arabicLabel.font = UIFont.currentArabicFont()
+        arabicLabel.textColor = theme.foreground
+        translatedLabel.font = UIFont.currentEnglishFont()
+        translatedLabel.textColor = theme.foreground
     }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        arabicLabel.font = UIFont.currentArabicFont()
-        translatedLabel.font = UIFont.currentEnglishFont()
-    }
+    @IBOutlet weak var arabicLabel: UILabel!
+    @IBOutlet weak var translatedLabel: UILabel!
 }

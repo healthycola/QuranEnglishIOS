@@ -10,12 +10,14 @@ import Foundation
 import UIKit
 
 class SurahViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    private static let offsetFromTopOfNavigationTitleHeader: CGFloat = 10
     @IBOutlet fileprivate weak var tableView: UITableView! {
         didSet {
             tableView.estimatedRowHeight = 80;
         }
     }
     fileprivate var titleTopConstraint: NSLayoutConstraint?
+    fileprivate var translatedTitleTopConstraint: NSLayoutConstraint?
     fileprivate var navigationTitleLabel: UILabel?
     fileprivate var navigationTitleContainer: UIView?
     fileprivate var headerLabel: UILabel!
@@ -25,6 +27,7 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTheme()
         
         let headerView = constructHeader()
         setTableHeaderView(with: headerView)
@@ -48,15 +51,10 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
     fileprivate func constructHeader() -> UIView {
         let label = UILabel();
         label.textAlignment = .center
+        label.textColor = SettingsManager.shared.theme.foreground
         label.font = UIFont.arabicFont(arabicFont: .AlNileBold, size: 45)
         label.text = getSurahMetadata().arabicName
         label.sizeToFit()
-        
-        let englishLabel = UILabel();
-        englishLabel.textAlignment = .center
-        englishLabel.font = UIFont.systemFont(ofSize: 14)
-        englishLabel.text = getSurahMetadata().translatedName
-        [label, englishLabel].forEach { $0.sizeToFit() }
         
         let borderContainer = UIView()
         let border = BorderView(borderType: .Horizontal, length: 200)
@@ -65,11 +63,11 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
         border.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             border.centerXAnchor.constraint(equalTo: borderContainer.centerXAnchor),
-            border.topAnchor.constraint(equalTo: borderContainer.topAnchor, constant: 5),
-            border.bottomAnchor.constraint(equalTo: borderContainer.bottomAnchor, constant: 5)
+            border.topAnchor.constraint(equalTo: borderContainer.topAnchor),
+            border.bottomAnchor.constraint(equalTo: borderContainer.bottomAnchor)
         ])
         
-        let stackView = UIStackView(arrangedSubviews: [label, englishLabel, borderContainer])
+        let stackView = UIStackView(arrangedSubviews: [label, borderContainer])
         stackView.axis = .vertical
     
         headerLabel = label
@@ -80,17 +78,34 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
     fileprivate func setupNavigationTitle() {
         let titleContainer = UIView()
         let arabicLabel = UILabel()
-        titleContainer.addSubview(arabicLabel)
         arabicLabel.attributedText = getArabicTitleAttributedText(for: getSurahMetadata().arabicName, with: 35)
-        arabicLabel.translatesAutoresizingMaskIntoConstraints = false
+        arabicLabel.textColor = SettingsManager.shared.theme.foreground
+
+        let englishLabel = UILabel()
+        englishLabel.text = getSurahMetadata().translatedName
+        englishLabel.font = UIFont.boldSystemFont(ofSize: 17)
+        englishLabel.textColor = SettingsManager.shared.theme.foreground
+        
+        titleContainer.addSubview(englishLabel)
+        titleContainer.addSubview(arabicLabel)
+        
+        englishLabel.sizeToFit()
         arabicLabel.sizeToFit()
-        let containerHeight = arabicLabel.frame.height
+        let containerHeight = arabicLabel.frame.height + englishLabel.frame.height
+        
+        arabicLabel.translatesAutoresizingMaskIntoConstraints = false
+        englishLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             arabicLabel.centerXAnchor.constraint(equalTo: titleContainer.centerXAnchor),
-            arabicLabel.widthAnchor.constraint(equalTo: titleContainer.widthAnchor)
+            arabicLabel.widthAnchor.constraint(equalTo: titleContainer.widthAnchor),
+            englishLabel.centerXAnchor.constraint(equalTo: titleContainer.centerXAnchor),
+            englishLabel.widthAnchor.constraint(equalTo: titleContainer.widthAnchor),
             ])
         titleTopConstraint = arabicLabel.topAnchor.constraint(equalTo: titleContainer.topAnchor)
         titleTopConstraint?.isActive = true
+        translatedTitleTopConstraint = englishLabel.topAnchor.constraint(equalTo: titleContainer.topAnchor, constant: SurahViewController.offsetFromTopOfNavigationTitleHeader)
+        translatedTitleTopConstraint?.isActive = true
+        
         titleContainer.clipsToBounds = true
         navigationItem.titleView = titleContainer
         titleTopConstraint?.constant = containerHeight
@@ -121,7 +136,7 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "surahViewCell", for: indexPath) as! SurahViewCell
-        cell.setup(arabicText: getSurah().ayas[indexPath.row].text, translation: getTranslation()?.ayas[indexPath.row].text)
+        cell.setup(theme: SettingsManager.shared.theme, arabicText: getSurah().ayas[indexPath.row].text, translation: getTranslation()?.ayas[indexPath.row].text)
         
         return cell
     }
@@ -146,6 +161,15 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
         attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont.systemFont(ofSize: 14), range: NSMakeRange(0, attributedString.length))
         return attributedString
     }
+    
+    fileprivate func setupTheme() {
+        let theme = SettingsManager.shared.theme
+        view.backgroundColor = theme.backgroundColor
+        tableView.backgroundColor = theme.backgroundColor
+        navigationController?.navigationBar.barStyle = theme.barStyle
+        navigationController?.navigationBar.barTintColor  = theme.backgroundColor;
+        navigationController?.navigationBar.tintColor = theme.primaryTint
+    }
 }
 
 extension SurahViewController: UIScrollViewDelegate {
@@ -156,8 +180,15 @@ extension SurahViewController: UIScrollViewDelegate {
         let headerViewTitleRectInScrollView = headerLabel.convert(headerLabel.frame, to: scrollView)
         let offset = headerViewTitleRectInScrollView.minY - scrollView.bounds.origin.y
         navigationLabel.accessibilityElementsHidden = offset > 0
-        let scaledOffset = (offset / headerViewTitleRectInScrollView.height) * navigationLabel.frame.height
-        titleTopConstraint?.constant = max(0, min(navigationContainer.frame.maxY, navigationContainer.frame.maxY + scaledOffset))
+        let scaledOffset = (offset / headerViewTitleRectInScrollView.height) * navigationContainer.frame.height
+        let labelOffset = max(0, min(navigationContainer.frame.maxY, navigationContainer.frame.maxY + scaledOffset))
+        titleTopConstraint?.constant = labelOffset
+        
+//        if labelOffset < navigationContainer.frame.maxY {
+            translatedTitleTopConstraint?.constant = min(SurahViewController.offsetFromTopOfNavigationTitleHeader, labelOffset - navigationContainer.frame.maxY + SurahViewController.offsetFromTopOfNavigationTitleHeader)
+//        } else {
+//            translatedTitleTopConstraint?.constant = SurahViewController.offsetFromTopOfNavigationTitleHeader
+//        }
     }
 }
 
@@ -165,7 +196,11 @@ class SurahViewCell: UITableViewCell {
     @IBOutlet private weak var arabicText: UILabel!
     @IBOutlet private weak var translation: UILabel!
     
-    func setup(arabicText: String, translation: String?) {
+    func setup(theme: Theme, arabicText: String, translation: String?) {
+        backgroundColor = theme.backgroundColor
+        self.arabicText.textColor = theme.foreground
+        self.translation.textColor = theme.foreground
+        
         setArabicText(arabicText)
         setTranslationText(translation)
     }

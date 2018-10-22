@@ -22,19 +22,19 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0fZ-ef-hDY">
-                                        <rect key="frame" x="0.0" y="8" width="375" height="212"/>
+                                        <rect key="frame" x="0.0" y="8" width="375" height="205"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QM2-hQ-ADW" userLabel="ArabicFontStack">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arabic Font Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FC-VU-PdR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="105.5" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="20" maxValue="40" translatesAutoresizingMaskIntoConstraints="NO" id="rs7-6A-YEP">
-                                                        <rect key="frame" x="-2" y="25.5" width="379" height="31"/>
+                                                        <rect key="frame" x="-2" y="22" width="379" height="31"/>
                                                         <connections>
                                                             <action selector="fontSliderChange:" destination="p9q-yK-mfK" eventType="valueChanged" id="njy-nM-rPc"/>
                                                         </connections>
@@ -46,16 +46,16 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IEg-4J-78V" userLabel="EnglishFontStack">
-                                                <rect key="frame" x="0.0" y="75.5" width="375" height="55.5"/>
+                                                <rect key="frame" x="0.0" y="72" width="375" height="52"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English Font Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmA-EC-aDm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="130.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="110.5" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="10" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="WxW-Sw-Fsg">
-                                                        <rect key="frame" x="-2" y="25.5" width="379" height="31"/>
+                                                        <rect key="frame" x="-2" y="22" width="379" height="31"/>
                                                         <connections>
                                                             <action selector="fontSliderChange:" destination="p9q-yK-mfK" eventType="valueChanged" id="K5h-5R-hVM"/>
                                                         </connections>
@@ -67,7 +67,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wPH-qN-wVz" userLabel="TextPreview">
-                                                <rect key="frame" x="0.0" y="151" width="375" height="61"/>
+                                                <rect key="frame" x="0.0" y="144" width="375" height="61"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS0-OY-ppX">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
@@ -85,6 +85,14 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYn-od-Nf0">
+                                        <rect key="frame" x="164" y="308" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="toggleTheme:" destination="p9q-yK-mfK" eventType="touchUpInside" id="0lu-uX-G78"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="0fZ-ef-hDY" firstAttribute="width" secondItem="9qW-ZC-XpW" secondAttribute="width" id="OgR-G6-HyF"/>
@@ -109,6 +117,7 @@
                         <outlet property="arabicTextPreview" destination="hS0-OY-ppX" id="yEb-Yq-qv7"/>
                         <outlet property="englishFontSlider" destination="WxW-Sw-Fsg" id="Qzd-PH-jEU"/>
                         <outlet property="englishTextPreview" destination="3J1-bN-b5B" id="TI4-ha-VXa"/>
+                        <outlet property="themeButton" destination="pYn-od-Nf0" id="039-kw-J64"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mi4-KK-BCx" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -4,6 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>OpenSans-Regular.ttf</string>
 		<string>AlBayan-Bold.otf</string>
 		<string>AlBayan.ttf</string>
 		<string>Alkalami-Regular.ttf</string>

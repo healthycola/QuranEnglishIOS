@@ -19,6 +19,7 @@ enum ArabicFont: String {
 
 enum EnglishFont: String {
     case Palatino = "Palatino-Roman"
+    case OpenSans = "OpenSans-Regular"
 }
 
 extension UIFont {
@@ -42,6 +43,6 @@ extension UIFont {
     }
     
     static func currentEnglishFont() -> UIFont {
-        return UIFont.englishFont(englishFont: .Palatino, size: SettingsManager.shared.englishFontSize)
+        return UIFont.englishFont(englishFont: .OpenSans, size: SettingsManager.shared.englishFontSize)
     }
 }

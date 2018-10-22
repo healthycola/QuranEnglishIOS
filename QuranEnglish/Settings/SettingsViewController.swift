@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class SettingsViewController: UIViewController {
-    private let fontChangeStep: Float = 5
+    private let fontChangeStep: Float = 2
     @IBOutlet weak var arabicFontSlider: UISlider! {
         didSet {
             arabicFontSlider.setValue(Float(SettingsManager.shared.arabicFontSize), animated: false)
@@ -31,6 +31,11 @@ class SettingsViewController: UIViewController {
         didSet {
             englishTextPreview.text = "Guide us to the straight path"
             englishTextPreview.font = UIFont.currentEnglishFont()
+        }
+    }
+    @IBOutlet weak var themeButton: UIButton! {
+        didSet {
+            themeButton.setTitle(SettingsManager.shared.theme.rawValue, for: .normal)
         }
     }
     override func viewDidLoad() {
@@ -54,6 +59,10 @@ class SettingsViewController: UIViewController {
             SettingsManager.shared.englishFontSize = CGFloat(roundedStepValue)
         }
     }
+    @IBAction func toggleTheme(_ sender: Any) {
+        SettingsManager.shared.theme = SettingsManager.shared.theme == .theme1 ?
+            .theme2 : .theme1
+    }
 }
 
 extension SettingsViewController: SettingsObserver {
@@ -64,6 +73,9 @@ extension SettingsViewController: SettingsObserver {
             break
         case .englishFontSize(_):
             englishTextPreview.font = UIFont.currentEnglishFont()
+            break
+        case .theme:
+            themeButton.setTitle(SettingsManager.shared.theme.rawValue, for: .normal)
             break
         }
     }
