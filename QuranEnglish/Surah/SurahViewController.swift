@@ -136,7 +136,12 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "surahViewCell", for: indexPath) as! SurahViewCell
-        cell.setup(theme: SettingsManager.shared.theme, arabicText: getSurah().ayas[indexPath.row].text, translation: getTranslation()?.ayas[indexPath.row].text)
+        cell.setup(
+            theme: SettingsManager.shared.theme,
+            arabicText: getSurah().ayas[indexPath.row].text,
+            index: indexPath.row + 1,
+            translation: getTranslation()?.ayas[indexPath.row].text
+        )
         
         return cell
     }
@@ -184,25 +189,28 @@ extension SurahViewController: UIScrollViewDelegate {
         let labelOffset = max(0, min(navigationContainer.frame.maxY, navigationContainer.frame.maxY + scaledOffset))
         titleTopConstraint?.constant = labelOffset
         
-//        if labelOffset < navigationContainer.frame.maxY {
-            translatedTitleTopConstraint?.constant = min(SurahViewController.offsetFromTopOfNavigationTitleHeader, labelOffset - navigationContainer.frame.maxY + SurahViewController.offsetFromTopOfNavigationTitleHeader)
-//        } else {
-//            translatedTitleTopConstraint?.constant = SurahViewController.offsetFromTopOfNavigationTitleHeader
-//        }
+        translatedTitleTopConstraint?.constant = min(SurahViewController.offsetFromTopOfNavigationTitleHeader, labelOffset - navigationContainer.frame.maxY + SurahViewController.offsetFromTopOfNavigationTitleHeader)
     }
 }
 
 class SurahViewCell: UITableViewCell {
     @IBOutlet private weak var arabicText: UILabel!
     @IBOutlet private weak var translation: UILabel!
+    @IBOutlet private weak var index: UILabel!
+    @IBOutlet private weak var secondaryBackground: UIView!
+    @IBOutlet private weak var secondaryBackgroundShadow: UIView!
     
-    func setup(theme: Theme, arabicText: String, translation: String?) {
+    func setup(theme: Theme, arabicText: String, index: Int, translation: String?) {
         backgroundColor = theme.backgroundColor
+        secondaryBackground.backgroundColor = theme.secondaryBackgroundColor
+        secondaryBackgroundShadow.backgroundColor = theme.foreground
         self.arabicText.textColor = theme.foreground
         self.translation.textColor = theme.foreground
+        self.index.textColor = theme.foreground
         
         setArabicText(arabicText)
         setTranslationText(translation)
+        self.index.text = String(index)
     }
     
     private func setArabicText(_ arabicText: String) {

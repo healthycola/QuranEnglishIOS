@@ -103,10 +103,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A5B-ty-24c">
-                                                    <rect key="frame" x="20" y="10" width="335" height="79.5"/>
+                                                    <rect key="frame" x="20" y="10" width="308" height="79.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC0-LW-LpO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="335" height="11.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC0-LW-LpO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="308" height="33"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ">
                                                                     <attributes>
@@ -125,8 +125,8 @@
                                                             </attributedString>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cv-NA-f3B">
-                                                            <rect key="frame" x="0.0" y="21.5" width="335" height="58"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cv-NA-f3B">
+                                                            <rect key="frame" x="0.0" y="43" width="308" height="36.5"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment>
                                                                     <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio odio, aliquam elementum sollicitudin eget, scelerisque id nibh. Sed nec urna nulla.</string>
@@ -147,16 +147,50 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j4-nU-zQ7">
+                                                    <rect key="frame" x="336" y="10" width="39" height="29"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbE-A8-1B9">
+                                                    <rect key="frame" x="336" y="10" width="39" height="28"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7B-GY-FGc">
+                                                            <rect key="frame" x="7.5" y="5.5" width="24" height="17"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="24" id="0We-UG-kzB"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="C7B-GY-FGc" firstAttribute="centerX" secondItem="XbE-A8-1B9" secondAttribute="centerX" id="FFv-eA-iYc"/>
+                                                        <constraint firstItem="C7B-GY-FGc" firstAttribute="centerY" secondItem="XbE-A8-1B9" secondAttribute="centerY" id="My4-21-e3X"/>
+                                                        <constraint firstAttribute="width" constant="39" id="UjB-Wt-aiY"/>
+                                                        <constraint firstAttribute="height" constant="28" id="d4D-gE-KpT"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="3j4-nU-zQ7" firstAttribute="trailing" secondItem="XbE-A8-1B9" secondAttribute="trailing" id="3k0-WB-BZy"/>
                                                 <constraint firstAttribute="bottom" secondItem="A5B-ty-24c" secondAttribute="bottom" constant="10" id="9gI-pT-ZZE"/>
                                                 <constraint firstItem="A5B-ty-24c" firstAttribute="leading" secondItem="7zl-r2-vQh" secondAttribute="leading" constant="20" id="HNu-CP-RRt"/>
-                                                <constraint firstAttribute="trailing" secondItem="A5B-ty-24c" secondAttribute="trailing" constant="20" id="JJ1-Jp-n6N"/>
+                                                <constraint firstItem="A5B-ty-24c" firstAttribute="trailing" secondItem="3j4-nU-zQ7" secondAttribute="leading" constant="-8" id="IfZ-pd-UU0"/>
                                                 <constraint firstItem="A5B-ty-24c" firstAttribute="top" secondItem="7zl-r2-vQh" secondAttribute="top" constant="10" id="Mao-SC-Eue"/>
+                                                <constraint firstAttribute="trailing" secondItem="XbE-A8-1B9" secondAttribute="trailing" id="fPc-OT-iXQ"/>
+                                                <constraint firstItem="XbE-A8-1B9" firstAttribute="top" secondItem="A5B-ty-24c" secondAttribute="top" id="iPY-vm-3sW"/>
+                                                <constraint firstItem="XbE-A8-1B9" firstAttribute="top" secondItem="3j4-nU-zQ7" secondAttribute="top" id="mPQ-yN-U89"/>
+                                                <constraint firstItem="3j4-nU-zQ7" firstAttribute="leading" secondItem="XbE-A8-1B9" secondAttribute="leading" id="rcB-PI-1gd"/>
+                                                <constraint firstItem="XbE-A8-1B9" firstAttribute="bottom" secondItem="3j4-nU-zQ7" secondAttribute="bottom" constant="-1" id="swl-yY-YAJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="arabicText" destination="TC0-LW-LpO" id="Q0z-GG-gn6"/>
+                                            <outlet property="index" destination="C7B-GY-FGc" id="qn3-pf-cPu"/>
+                                            <outlet property="secondaryBackground" destination="XbE-A8-1B9" id="T1O-h5-SqQ"/>
+                                            <outlet property="secondaryBackgroundShadow" destination="3j4-nU-zQ7" id="gk2-Md-wMt"/>
                                             <outlet property="translation" destination="2Cv-NA-f3B" id="Vga-bu-xbN"/>
                                         </connections>
                                     </tableViewCell>
@@ -182,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PKu-1K-AlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="790"/>
+            <point key="canvasLocation" x="1029.5999999999999" y="789.35532233883066"/>
         </scene>
     </scenes>
 </document>
