@@ -7,13 +7,16 @@
 //
 
 import Foundation
+import FontAwesome_swift
 import UIKit
+import SwipeCellKit
 
 class SurahViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     private static let offsetFromTopOfNavigationTitleHeader: CGFloat = 10
     @IBOutlet fileprivate weak var tableView: UITableView! {
         didSet {
             tableView.estimatedRowHeight = 80;
+            tableView.rowHeight = UITableView.automaticDimension
         }
     }
     fileprivate var titleTopConstraint: NSLayoutConstraint?
@@ -130,10 +133,6 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
         return getSurah().ayas.count
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "surahViewCell", for: indexPath) as! SurahViewCell
         cell.setup(
@@ -142,6 +141,7 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
             index: indexPath.row + 1,
             translation: getTranslation()?.ayas[indexPath.row].text
         )
+        cell.delegate = self
         
         return cell
     }
@@ -193,7 +193,43 @@ extension SurahViewController: UIScrollViewDelegate {
     }
 }
 
-class SurahViewCell: UITableViewCell {
+extension SurahViewController: SwipeTableViewCellDelegate {
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
+        if orientation == .left {
+            let bookmarkAction = SwipeAction(style: .default, title: "Bookmark") { action, indexPath in
+                print("Bookmark Actions")
+            }
+            
+            // customize the action appearance
+            bookmarkAction.font = UIFont.fontAwesome(ofSize: 18, style: .solid)
+            bookmarkAction.backgroundColor = SettingsManager.shared.theme.primaryTint
+            bookmarkAction.title = String.fontAwesomeIcon(name: .bookmark)
+            
+            return [bookmarkAction]
+        } else {
+            let notesActions = SwipeAction(style: .default, title: "Notes") { action, indexPath in
+                print("Notes Actions")
+            }
+            
+            // customize the action appearance
+            notesActions.font = UIFont.fontAwesome(ofSize: 18, style: .solid)
+            notesActions.backgroundColor = SettingsManager.shared.theme.secondaryTint
+            notesActions.title = String.fontAwesomeIcon(name: .stickyNote)
+            
+            return [notesActions]
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeOptions {
+        var options = SwipeOptions()
+        options.transitionStyle = .drag
+        options.expansionStyle = .selection
+        options.backgroundColor = SettingsManager.shared.theme.backgroundColor
+        return options
+    }
+}
+
+class SurahViewCell: SwipeTableViewCell {
     @IBOutlet private weak var arabicText: UILabel!
     @IBOutlet private weak var translation: UILabel!
     @IBOutlet private weak var index: UILabel!

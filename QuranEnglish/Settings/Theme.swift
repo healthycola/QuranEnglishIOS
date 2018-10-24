@@ -39,6 +39,15 @@ enum Theme: String {
         }
     }
     
+    var secondaryTint: UIColor {
+        switch self {
+        case .theme1:
+            return UIColor.colorFromHexString("945EB8")
+        case .theme2:
+            return UIColor.colorFromHexString("#91B859")
+        }
+    }
+    
     var foreground: UIColor {
         switch self {
         case .theme1:

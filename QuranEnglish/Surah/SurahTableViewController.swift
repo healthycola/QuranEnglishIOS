@@ -10,7 +10,12 @@ import UIKit
 
 class SurahTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var quran: Quran!
-    @IBOutlet fileprivate weak var tableView: UITableView!
+    @IBOutlet fileprivate weak var tableView: UITableView! {
+        didSet {
+            tableView.estimatedRowHeight = 60;
+            tableView.rowHeight = UITableView.automaticDimension
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,7 +85,6 @@ extension SurahTableViewController: SettingsObserver {
 
 class SurahCell: UITableViewCell {
     func setupForTheme(theme: Theme) {
-//        contentView.backgroundColor = theme.backgroundColor
         backgroundColor = theme.backgroundColor
         arabicLabel.font = UIFont.currentArabicFont()
         arabicLabel.textColor = theme.foreground
