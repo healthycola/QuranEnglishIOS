@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="AyaMetadata" representedClassName="AyaMetadata" syncable="YES" codeGenerationType="class">
+    <entity name="AyaMetadata" representedClassName="AyaMetadata" syncable="YES">
         <attribute name="ayaindex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="surahindex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="bookmark" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bookmark" inverseName="ayametadata" inverseEntity="Bookmark" syncable="YES"/>
     </entity>
     <entity name="Bookmark" representedClassName="Bookmark" syncable="YES">
         <attribute name="dateadded" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <relationship name="aya" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AyaMetadata" syncable="YES"/>
+        <relationship name="ayametadata" maxCount="1" deletionRule="Nullify" destinationEntity="AyaMetadata" inverseName="bookmark" inverseEntity="AyaMetadata" syncable="YES"/>
     </entity>
+    <fetchRequest name="AllAyas" entity="AyaMetadata" predicateString="ayaindex == $AYAINDEX_PARAMETER AND surahindex == $SURAHINDEX_PARAMETER"/>
+    <fetchRequest name="AllBookmarks" entity="Bookmark"/>
     <elements>
+        <element name="AyaMetadata" positionX="306.16015625" positionY="31.6640625" width="128" height="90"/>
         <element name="Bookmark" positionX="-45" positionY="0" width="128" height="75"/>
-        <element name="AyaMetadata" positionX="306.16015625" positionY="31.6640625" width="128" height="75"/>
     </elements>
 </model>

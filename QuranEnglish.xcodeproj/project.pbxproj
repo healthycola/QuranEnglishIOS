@@ -24,6 +24,12 @@
 		8A581AD61EE15D19009B18F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A581AD51EE15D19009B18F3 /* Assets.xcassets */; };
 		8A581AD91EE15D19009B18F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A581AD71EE15D19009B18F3 /* LaunchScreen.storyboard */; };
 		8A581AE11EE1694D009B18F3 /* quran-simple.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8A581AE01EE1694D009B18F3 /* quran-simple.xml */; };
+		8A6538B72180C41B000ABA7E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6538B62180C41B000ABA7E /* CoreDataStack.swift */; };
+		8A6538C62180C6F9000ABA7E /* AyaMetadata+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6538C22180C6F9000ABA7E /* AyaMetadata+CoreDataClass.swift */; };
+		8A6538C82180C6F9000ABA7E /* Bookmark+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6538C42180C6F9000ABA7E /* Bookmark+CoreDataClass.swift */; };
+		8A6538CB2180C829000ABA7E /* BookmarksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6538CA2180C829000ABA7E /* BookmarksManager.swift */; };
+		8A6538D6218187AE000ABA7E /* Bookmark+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6538D4218187AE000ABA7E /* Bookmark+CoreDataProperties.swift */; };
+		8A6538D7218187AE000ABA7E /* AyaMetadata+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6538D5218187AE000ABA7E /* AyaMetadata+CoreDataProperties.swift */; };
 		8A77C55220D631EE009CBBC7 /* QuranDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77C55120D631EE009CBBC7 /* QuranDocument.swift */; };
 		8A77C55420D63CA1009CBBC7 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77C55320D63CA1009CBBC7 /* LoadingScreen.swift */; };
 		8A77C55620D6454C009CBBC7 /* SurahTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77C55520D6454C009CBBC7 /* SurahTableViewController.swift */; };
@@ -66,6 +72,12 @@
 		8A581AD81EE15D19009B18F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A581ADA1EE15D19009B18F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A581AE01EE1694D009B18F3 /* quran-simple.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "quran-simple.xml"; sourceTree = "<group>"; };
+		8A6538B62180C41B000ABA7E /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		8A6538C22180C6F9000ABA7E /* AyaMetadata+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AyaMetadata+CoreDataClass.swift"; path = "QuranEnglish/CoreData/Models/AyaMetadata+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8A6538C42180C6F9000ABA7E /* Bookmark+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Bookmark+CoreDataClass.swift"; path = "QuranEnglish/CoreData/Models/Bookmark+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8A6538CA2180C829000ABA7E /* BookmarksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksManager.swift; sourceTree = "<group>"; };
+		8A6538D4218187AE000ABA7E /* Bookmark+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Bookmark+CoreDataProperties.swift"; path = "/Users/aamirjawaid/Documents/workspace/QE/QuranEnglish/QuranEnglish/CoreData/New Group/Bookmark+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		8A6538D5218187AE000ABA7E /* AyaMetadata+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AyaMetadata+CoreDataProperties.swift"; path = "/Users/aamirjawaid/Documents/workspace/QE/QuranEnglish/QuranEnglish/CoreData/New Group/AyaMetadata+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		8A77C55120D631EE009CBBC7 /* QuranDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranDocument.swift; sourceTree = "<group>"; };
 		8A77C55320D63CA1009CBBC7 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 		8A77C55520D6454C009CBBC7 /* SurahTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahTableViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +189,8 @@
 		8A581ACA1EE15D19009B18F3 /* QuranEnglish */ = {
 			isa = PBXGroup;
 			children = (
+				8A6538C92180C80F000ABA7E /* Bookmarks */,
+				8A6538B52180C3FE000ABA7E /* CoreData */,
 				8A581ACB1EE15D19009B18F3 /* AppDelegate.swift */,
 				8A581AD51EE15D19009B18F3 /* Assets.xcassets */,
 				8AE275B9217AF45C00D19EFD /* DataFiles */,
@@ -195,6 +209,35 @@
 				8AE275B6217643A200D19EFD /* Views */,
 			);
 			path = QuranEnglish;
+			sourceTree = "<group>";
+		};
+		8A6538B52180C3FE000ABA7E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8A6538B82180C62E000ABA7E /* Models */,
+				8A6538B62180C41B000ABA7E /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8A6538B82180C62E000ABA7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A6538D4218187AE000ABA7E /* Bookmark+CoreDataProperties.swift */,
+				8A6538D5218187AE000ABA7E /* AyaMetadata+CoreDataProperties.swift */,
+				8A6538C22180C6F9000ABA7E /* AyaMetadata+CoreDataClass.swift */,
+				8A6538C42180C6F9000ABA7E /* Bookmark+CoreDataClass.swift */,
+			);
+			name = Models;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8A6538C92180C80F000ABA7E /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				8A6538CA2180C829000ABA7E /* BookmarksManager.swift */,
+			);
+			path = Bookmarks;
 			sourceTree = "<group>";
 		};
 		8A7FA25620B3D6EF00991490 /* Models */ = {
@@ -283,6 +326,7 @@
 				TargetAttributes = {
 					8A581AC71EE15D19009B18F3 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = V2V32H7Y34;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -396,19 +440,25 @@
 				8A4E68F82172B6E10050B5BF /* DataParser.swift in Sources */,
 				8A77C55420D63CA1009CBBC7 /* LoadingScreen.swift in Sources */,
 				8A7FA25A20B3D70500991490 /* Surah.swift in Sources */,
+				8A6538C62180C6F9000ABA7E /* AyaMetadata+CoreDataClass.swift in Sources */,
+				8A6538D7218187AE000ABA7E /* AyaMetadata+CoreDataProperties.swift in Sources */,
 				8AE275C1217B05F000D19EFD /* UIBarButtonItem+Extensions.swift in Sources */,
 				8AD5215421724F2D0008E7C6 /* QuranMetadata.swift in Sources */,
+				8A6538CB2180C829000ABA7E /* BookmarksManager.swift in Sources */,
 				8AE275CE217BBDAD00D19EFD /* Theme.swift in Sources */,
 				8A581AD41EE15D19009B18F3 /* QuranEnglish.xcdatamodeld in Sources */,
 				8A77C55220D631EE009CBBC7 /* QuranDocument.swift in Sources */,
 				8AE275B8217643AF00D19EFD /* BorderView.swift in Sources */,
 				8A392F612172738700DA1200 /* QuranParsingManager.swift in Sources */,
+				8A6538C82180C6F9000ABA7E /* Bookmark+CoreDataClass.swift in Sources */,
 				8A4E69012172BFF10050B5BF /* SurahViewController.swift in Sources */,
 				8A4E69042172CC6F0050B5BF /* UIFont+Extensions.swift in Sources */,
 				8A77C55620D6454C009CBBC7 /* SurahTableViewController.swift in Sources */,
 				8AE275BB217AF4C100D19EFD /* Translations.swift in Sources */,
 				8A581ACC1EE15D19009B18F3 /* AppDelegate.swift in Sources */,
 				8A4E68FA2172B8DD0050B5BF /* ParsingErrors.swift in Sources */,
+				8A6538B72180C41B000ABA7E /* CoreDataStack.swift in Sources */,
+				8A6538D6218187AE000ABA7E /* Bookmark+CoreDataProperties.swift in Sources */,
 				8A7FA25C20B3D72400991490 /* Quran.swift in Sources */,
 				8AE275C8217B0BE700D19EFD /* SettingsManager.swift in Sources */,
 				8AE275CC217BBCFB00D19EFD /* UIColor+Extensions.swift in Sources */,
@@ -536,7 +586,7 @@
 			baseConfigurationReference = 5381E0BA815159F0C43BDD2A /* Pods-QuranEnglish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V2V32H7Y34;
 				INFOPLIST_FILE = QuranEnglish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlMaaida.QuranEnglish;
@@ -550,7 +600,7 @@
 			baseConfigurationReference = D7B689BA9D8369E48777D1AF /* Pods-QuranEnglish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V2V32H7Y34;
 				INFOPLIST_FILE = QuranEnglish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlMaaida.QuranEnglish;

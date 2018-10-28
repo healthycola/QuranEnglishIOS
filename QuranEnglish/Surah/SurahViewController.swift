@@ -28,6 +28,8 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
     var quran: Quran!
     var surahIndex: Int!
     
+    private var bookmarks: [Int : Bookmark] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTheme()
@@ -36,6 +38,15 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
         setTableHeaderView(with: headerView)
         
         setupNavigationTitle()
+        
+        BookmarksManager.shared.bookmarks.forEach {
+            guard let bookmarkSurahIndex = $0.ayametadata?.surahindex, bookmarkSurahIndex == Int16(surahIndex), let bookmarkAyaIndex = $0.ayametadata?.ayaindex else {
+                return
+            }
+            
+            let bookmarkAyaIndexInt = Int(bookmarkAyaIndex)
+            self.bookmarks[bookmarkAyaIndexInt] = $0
+        }
     }
     
     fileprivate func setTableHeaderView(with view: UIView) {
@@ -139,7 +150,8 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
             theme: SettingsManager.shared.theme,
             arabicText: getSurah().ayas[indexPath.row].text,
             index: indexPath.row + 1,
-            translation: getTranslation()?.ayas[indexPath.row].text
+            translation: getTranslation()?.ayas[indexPath.row].text,
+            isBookmarked: bookmarks[indexPath.row + 1] != nil
         )
         cell.delegate = self
         
@@ -196,8 +208,23 @@ extension SurahViewController: UIScrollViewDelegate {
 extension SurahViewController: SwipeTableViewCellDelegate {
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
         if orientation == .left {
-            let bookmarkAction = SwipeAction(style: .default, title: "Bookmark") { action, indexPath in
-                print("Bookmark Actions")
+            let bookmarkAction = SwipeAction(style: .default, title: "Bookmark")
+            { action, indexPath in
+                let ayaIndex = indexPath.row + 1
+                if let bookmark = self.bookmarks[ayaIndex] {
+                    if let _ = BookmarksManager.shared.removeBookmark(bookmark) {
+                        self.bookmarks.removeValue(forKey: ayaIndex)
+                        let cell = tableView.cellForRow(at: indexPath) as! SurahViewCell
+                        cell.setBookmark(false)
+                    }
+                } else {
+                    if let newBookmark = BookmarksManager.shared.addBookmark(surahIndex: self.surahIndex, ayaIndex: ayaIndex) {
+                        self.bookmarks[ayaIndex] = newBookmark
+                        
+                        let cell = tableView.cellForRow(at: indexPath) as! SurahViewCell
+                        cell.setBookmark(true)
+                    }
+                }
             }
             
             // customize the action appearance
@@ -235,18 +262,27 @@ class SurahViewCell: SwipeTableViewCell {
     @IBOutlet private weak var index: UILabel!
     @IBOutlet private weak var secondaryBackground: UIView!
     @IBOutlet private weak var secondaryBackgroundShadow: UIView!
+    @IBOutlet private weak var bookmarkView: UIView!
     
-    func setup(theme: Theme, arabicText: String, index: Int, translation: String?) {
+    private var theme: Theme!
+    
+    func setup(theme: Theme, arabicText: String, index: Int, translation: String?, isBookmarked: Bool) {
         backgroundColor = theme.backgroundColor
         secondaryBackground.backgroundColor = theme.secondaryBackgroundColor
         secondaryBackgroundShadow.backgroundColor = theme.foreground
+        self.theme = theme
         self.arabicText.textColor = theme.foreground
         self.translation.textColor = theme.foreground
         self.index.textColor = theme.foreground
+        self.bookmarkView.backgroundColor = isBookmarked ? theme.primaryTint : UIColor.clear
         
         setArabicText(arabicText)
         setTranslationText(translation)
         self.index.text = String(index)
+    }
+    
+    func setBookmark(_ value: Bool) {
+        self.bookmarkView.backgroundColor = value ? theme.primaryTint : UIColor.clear
     }
     
     private func setArabicText(_ arabicText: String) {

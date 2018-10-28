@@ -106,7 +106,7 @@
                                                     <rect key="frame" x="20" y="10" width="308" height="79.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TC0-LW-LpO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="308" height="33"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="308" height="41"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ">
                                                                     <attributes>
@@ -126,7 +126,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cv-NA-f3B">
-                                                            <rect key="frame" x="0.0" y="43" width="308" height="36.5"/>
+                                                            <rect key="frame" x="0.0" y="51" width="308" height="28.5"/>
                                                             <attributedString key="attributedText">
                                                                 <fragment>
                                                                     <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio odio, aliquam elementum sollicitudin eget, scelerisque id nibh. Sed nec urna nulla.</string>
@@ -172,6 +172,13 @@
                                                         <constraint firstAttribute="height" constant="28" id="d4D-gE-KpT"/>
                                                     </constraints>
                                                 </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4Y-Jc-mga">
+                                                    <rect key="frame" x="0.0" y="0.0" width="5" height="99.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="5" id="TlJ-pX-uNK"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="3j4-nU-zQ7" firstAttribute="trailing" secondItem="XbE-A8-1B9" secondAttribute="trailing" id="3k0-WB-BZy"/>
@@ -179,15 +186,19 @@
                                                 <constraint firstItem="A5B-ty-24c" firstAttribute="leading" secondItem="7zl-r2-vQh" secondAttribute="leading" constant="20" id="HNu-CP-RRt"/>
                                                 <constraint firstItem="A5B-ty-24c" firstAttribute="trailing" secondItem="3j4-nU-zQ7" secondAttribute="leading" constant="-8" id="IfZ-pd-UU0"/>
                                                 <constraint firstItem="A5B-ty-24c" firstAttribute="top" secondItem="7zl-r2-vQh" secondAttribute="top" constant="10" id="Mao-SC-Eue"/>
+                                                <constraint firstItem="G4Y-Jc-mga" firstAttribute="leading" secondItem="7zl-r2-vQh" secondAttribute="leading" id="MhJ-zJ-gck"/>
+                                                <constraint firstAttribute="bottom" secondItem="G4Y-Jc-mga" secondAttribute="bottom" id="cTQ-ox-v6E"/>
                                                 <constraint firstAttribute="trailing" secondItem="XbE-A8-1B9" secondAttribute="trailing" id="fPc-OT-iXQ"/>
                                                 <constraint firstItem="XbE-A8-1B9" firstAttribute="top" secondItem="A5B-ty-24c" secondAttribute="top" id="iPY-vm-3sW"/>
                                                 <constraint firstItem="XbE-A8-1B9" firstAttribute="top" secondItem="3j4-nU-zQ7" secondAttribute="top" id="mPQ-yN-U89"/>
                                                 <constraint firstItem="3j4-nU-zQ7" firstAttribute="leading" secondItem="XbE-A8-1B9" secondAttribute="leading" id="rcB-PI-1gd"/>
                                                 <constraint firstItem="XbE-A8-1B9" firstAttribute="bottom" secondItem="3j4-nU-zQ7" secondAttribute="bottom" constant="-1" id="swl-yY-YAJ"/>
+                                                <constraint firstItem="G4Y-Jc-mga" firstAttribute="top" secondItem="7zl-r2-vQh" secondAttribute="top" id="vt9-QO-9h2"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="arabicText" destination="TC0-LW-LpO" id="Q0z-GG-gn6"/>
+                                            <outlet property="bookmarkView" destination="G4Y-Jc-mga" id="Ev9-6c-GhR"/>
                                             <outlet property="index" destination="C7B-GY-FGc" id="qn3-pf-cPu"/>
                                             <outlet property="secondaryBackground" destination="XbE-A8-1B9" id="T1O-h5-SqQ"/>
                                             <outlet property="secondaryBackgroundShadow" destination="3j4-nU-zQ7" id="gk2-Md-wMt"/>
