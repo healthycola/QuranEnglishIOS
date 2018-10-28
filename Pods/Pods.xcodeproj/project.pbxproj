@@ -7,64 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		036EF99C90C8F864C51959E8B5668033 /* SwipeCollectionViewCell+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2BCF9FDD6061A4BAC3CAE350221B11 /* SwipeCollectionViewCell+Accessibility.swift */; };
-		057B82F13763902FB00C88B775FDAD19 /* SwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EE56BF15A319A7A2F0408143376E09 /* SwipeTableViewCell.swift */; };
-		0B2116700FA0CFFB7FB4903C53230FED /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBF21CCBB8D6F2F521DF3A7F752C6433 /* Font Awesome 5 Brands-Regular-400.otf */; };
-		0FE9C1DB0A04041F2D6D572B7B519367 /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB8AE69E98E759D76C4308258E98A7 /* FontAwesomeTabBarItem.swift */; };
-		0FF663F919A014E6DE08F3726ED3D26F /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEA6B284502AAC7487D7E1390256475 /* FontAwesomeStateRequirement.swift */; };
-		1387CD89443B3A59794BFA085090F5EE /* SwipeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F334A78F1C1947755822ACB857EF40D /* SwipeCollectionViewCellDelegate.swift */; };
-		1E5AC1B829990D5196EE968FA5C92F95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
-		21EFCC882B890A1E0A27754A1E793D31 /* SwipeActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C24522498C69A305AAFE0D879D08431 /* SwipeActionButton.swift */; };
-		2B36BFB89AAE5E2FAB888A5B20315095 /* SwipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB585447F059AFA6DE46F7920AA11AFA /* SwipeCollectionViewCell.swift */; };
-		2D2DD9882ED57FA4A43A5912F7325970 /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C87BEA4F9D01F3EDDD3E98E49ED601B /* FontAwesomeImageRepresentable.swift */; };
-		2F2A77A503548E4666284FD4E8C72B07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
-		2FB275E9CDB3B51F9A419645A92E4484 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D38A035F5E8DF7B8FE3D3AF9DB812895 /* FontAwesome.swift.bundle */; };
-		31514774FEEC7F179F887E6F1CC84857 /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5145C2BE793FB07B6B1C237AD00A97A0 /* Font Awesome 5 Free-Solid-900.otf */; };
+		06774391DFCF08B814006FDD39D401E6 /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4166D3F1A888429F049187E1650276 /* Swipeable.swift */; };
+		06AD4584C8EF7FE291B4A089E13646DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		08CDF76D5360385D79ECD37AA8F1A9C9 /* SwipeFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B715DECA169FF9C0909AD51DBE213C7 /* SwipeFeedback.swift */; };
+		09F0F024D209BBF9C44B486FEBC86E22 /* SwipeActionTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311BAE5CAB4A4B6310E31F498D5B51 /* SwipeActionTransitioning.swift */; };
+		0AA9F91817149DFC9124C7961CBCCB43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59900B83CEE7DF1722AE09D7D380E3DB /* Extensions.swift */; };
+		0B2116700FA0CFFB7FB4903C53230FED /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0678F71AE63BDBA2E83CE40AF78C8B4F /* Font Awesome 5 Brands-Regular-400.otf */; };
+		0FE9C1DB0A04041F2D6D572B7B519367 /* FontAwesomeTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F34592D2D41CA26DAFF203EB7512A /* FontAwesomeTabBarItem.swift */; };
+		0FF663F919A014E6DE08F3726ED3D26F /* FontAwesomeStateRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7484A014F49BD9B4D70F449CE44CB9 /* FontAwesomeStateRequirement.swift */; };
+		1362F41BD35C0DF6C004BC4907318183 /* SwipeTransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0819A0EA37E283CE25CD5D1755B621 /* SwipeTransitionLayout.swift */; };
+		2D2DD9882ED57FA4A43A5912F7325970 /* FontAwesomeImageRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66734811C8FFF04893BDEEBAF0DC6EF6 /* FontAwesomeImageRepresentable.swift */; };
+		2F800B55413B1D3A1FBB3104D635149E /* SwipeCollectionViewCell+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4145F601F2D4FF9D613DB24A60BE6AC0 /* SwipeCollectionViewCell+Display.swift */; };
+		2FB275E9CDB3B51F9A419645A92E4484 /* FontAwesome.swift.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 21BD6F5563B80C7BA682D09159307E5B /* FontAwesome.swift.bundle */; };
+		31514774FEEC7F179F887E6F1CC84857 /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = DED94BA2530B7919A32EF9FF152E996C /* Font Awesome 5 Free-Solid-900.otf */; };
+		324FFB1D56C423271FEF9BDA5A9F0162 /* SwipeCellKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AF61931DEB31D050FFC28BEBCFE7D5 /* SwipeCellKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41418236DA1975BD7E87379336100E09 /* SwipeExpanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE734F60FC7C2341597C5084CD26BB6 /* SwipeExpanding.swift */; };
+		466AC6747717D0A15E1BA6C69B953E96 /* FastScroll.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0511940CF009B811425FE3C7AC49CC /* FastScroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47610629C7A7408DFCBE1EEA5DB0A7E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */; };
-		532B94DAC89623F895B0D5C1F04DB994 /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66E0FA7ADDFCECEC3E41ADF2049653 /* FontAwesomeSegmentedControl.swift */; };
-		6829147BAA51C35412B20F67D18D3ABA /* SwipeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8B1DC584AE3A7FBC204A57BC837C24 /* SwipeOptions.swift */; };
-		6A5241DD6B999DE935958998B007883D /* SwipeFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028C263E3BE4697EC93B4A8F2880351F /* SwipeFeedback.swift */; };
-		6B5413138C15627AB31211A88A063709 /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E71BC5D92D59C03100753BE4870214 /* FontAwesomeTextRepresentable.swift */; };
-		6E4503E76971D28696F25B837E0CDAE4 /* SwipeAccessibilityCustomAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9C3791C18A50ED810BD7CEA922E421 /* SwipeAccessibilityCustomAction.swift */; };
+		4AC1573F49339C94AF2C72CC198DAE94 /* Pods-QuranEnglish-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7FC6021EE6DFCBFF2D77E54A6C45C56 /* Pods-QuranEnglish-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5002E94AB7C01CCB8392B8B5305862D6 /* Pods-QuranEnglish-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4845FA9D075C487BFA7113CA17335BA2 /* Pods-QuranEnglish-dummy.m */; };
+		52AF1055808BF41F98088E5BFB95B994 /* SwipeTableViewCell+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA8E4A6B6B11F5A3C588506DD987FF0 /* SwipeTableViewCell+Display.swift */; };
+		532B94DAC89623F895B0D5C1F04DB994 /* FontAwesomeSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB715837E8BE592CAAF17A63195C518 /* FontAwesomeSegmentedControl.swift */; };
+		6634454EF61CFEADDB141DADC25B651C /* FastScrollTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5AEBC932948F65C0792B5C156132FF /* FastScrollTableView.swift */; };
+		66758D09676F58722A20C5F8206E88A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		6A10E505ABF954484C3FCD744101F902 /* FastScroll-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF249048C41FA2B5271739A230AC98B0 /* FastScroll-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A51F3430D0B9340E7010DC9757AFAC2 /* SwipeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27C7BCA25E3B3DB4D586C211E1210B0 /* SwipeCollectionViewCellDelegate.swift */; };
+		6B5413138C15627AB31211A88A063709 /* FontAwesomeTextRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE42D7F8C79491A577111582BBB6B3 /* FontAwesomeTextRepresentable.swift */; };
 		6EC40D7BADA054B926209056DFBFE316 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */; };
-		6F6366A86F1BD91B926FC18DB07184A5 /* SwipeExpanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00010ED64562A4ED5B00E6BDC884EE98 /* SwipeExpanding.swift */; };
-		6F9C78CE9BA836E9272D3D08F2EBD5AE /* FontAwesomeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358F0D28B68BFAA45CC12F04086C980 /* FontAwesomeExtension.swift */; };
-		80EB2D5BE4C80C20B5BB3A6031D30D1D /* SwipeTableViewCell+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771C84F02F6A9C490632320429F21FB1 /* SwipeTableViewCell+Accessibility.swift */; };
-		828E84A639F7F74F9C871F82A4E252B9 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6018AD3C3F070EC8FBD6370DE9D1AE4E /* Enum.swift */; };
-		89F604C5071756146A5C682E03897724 /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8774B68EE6459C508C5A375A3F7A0E32 /* FontAwesomeBarButtonItem.swift */; };
-		8AA278787337C1523CA469554328018E /* SwipeTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067B013F5DE17498152D2BA4EAFB0019 /* SwipeTableViewCellDelegate.swift */; };
-		8FE0421F24D8CA8A4B57C1987E4977D1 /* Pods-QuranEnglish-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7FC6021EE6DFCBFF2D77E54A6C45C56 /* Pods-QuranEnglish-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93929E495F12F2702B2522EE518586C5 /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627272344CBEB3446C38ABA37375C0AC /* FontAwesomeView.swift */; };
-		9419ACA668E00FFC1F70AA23359DF3E5 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D97BCDEFF7F8D56E14A311AD7C8645F /* FontAwesome.swift */; };
-		95723374286337486F925AA591C890B5 /* SwipeActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A6D6B3D904F82E56AA93FA12179D52 /* SwipeActionsView.swift */; };
-		95EFDA2029848A74F367B1986D043018 /* SwipeTableViewCell+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DE748D84F77C8C7FA113A618D0CD36 /* SwipeTableViewCell+Display.swift */; };
-		9F54027DCB0DA088F576D4A881C11D86 /* SwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102FBA82A336ED029A66FF1F2CBA8BC /* SwipeController.swift */; };
-		A3088DBACC68068F17A9B20A8F442ACA /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2ACCF6676EA62B5A85B110AD1FF041 /* Font Awesome 5 Free-Regular-400.otf */; };
-		A3A73EA7CC5916DE551174DC2BCAACDC /* SwipeCellKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BFBC0F97CBBD9A0F683C26DDA865E7D /* SwipeCellKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA0FDC1B2D069051D51D81C37D25D55D /* SwipeActionTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF06302328B514EBE1FACD57B978C1 /* SwipeActionTransitioning.swift */; };
-		AA3A69EC339DC7DDF6549213E06A50CF /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246D59583E9E9CAD565CA23A64B129E /* SwipeAction.swift */; };
-		AA63E5608FE170C6F97BE221E9645577 /* SwipeCellKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3307CCAD9C5A62A91E3E34DEC8623C /* SwipeCellKit-dummy.m */; };
-		B22CD5BAA233DD92D22269BAF31049B9 /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6D09B7CB2EFDD73B65EEE3A11852D1 /* FontAwesomeImageView.swift */; };
-		B633D850FB892345DDA1F0DB05213C58 /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AF997FC46153C5F15C372C91F5CEF4 /* FontAwesome.swift-dummy.m */; };
-		BD55C2B378FB29B9404E7D4AC2A0DA19 /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF9027DE7A7F940426099543F9E6D6 /* Swipeable.swift */; };
-		C14675C5A6D7756318CCD4EFDF57C4FD /* Pods-QuranEnglish-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4845FA9D075C487BFA7113CA17335BA2 /* Pods-QuranEnglish-dummy.m */; };
-		CDA070E3A8973396C059474AEF69BF50 /* SwipeTransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1511741BE948149B23A3175578838750 /* SwipeTransitionLayout.swift */; };
-		CF9AC5BBE4BC5E9B561AFF5A682D3F49 /* SwipeExpansionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424A77DB3EBD0D32DA0BF10727331977 /* SwipeExpansionStyle.swift */; };
-		D863E3666DD4DD60C172784E5718F1EE /* SwipeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F7FF0028A92CF280EFC1CFEEA52366 /* SwipeAnimator.swift */; };
-		DD296D6DF8AC3E1814624874847905C8 /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CC6E2E988F8FA73E4C7808B1323B353 /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E83D7188DF18CE612E878399854A0357 /* SwipeCollectionViewCell+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BADD73A63DC9E94494EF0D76A211FC /* SwipeCollectionViewCell+Display.swift */; };
-		F9DA24E4AA29E67070DEBB086B464257 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5D5FA681FC50DE72FB49912807D44 /* Extensions.swift */; };
+		6F9C78CE9BA836E9272D3D08F2EBD5AE /* FontAwesomeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD688E463EA2EEE6447A22CDD7BDE3A /* FontAwesomeExtension.swift */; };
+		824E0A59A33F216EAF92B0EDC31E6D2E /* SwipeActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8947A9D1F1841842E5D00606ED134184 /* SwipeActionsView.swift */; };
+		828E84A639F7F74F9C871F82A4E252B9 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E4F202F7A741AA292CE2171D9A323F /* Enum.swift */; };
+		84B785BFB90466657EAD1A335D0EEF1B /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27B01C6ED6A1216C098D18CB8E60108 /* SwipeAction.swift */; };
+		84E8F9FCC21D064B28794D7B83FC8397 /* FastScroll-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7085D4860B8B98B2C9882DF85A3867 /* FastScroll-dummy.m */; };
+		89F604C5071756146A5C682E03897724 /* FontAwesomeBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECDFB33853FC91AB264040D2E15ED5 /* FontAwesomeBarButtonItem.swift */; };
+		93929E495F12F2702B2522EE518586C5 /* FontAwesomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E950FBD2A2E9D10C6DEC492A40774CF0 /* FontAwesomeView.swift */; };
+		9419ACA668E00FFC1F70AA23359DF3E5 /* FontAwesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D079FEBDEDBF42A88C388457E1C276D /* FontAwesome.swift */; };
+		97BC55F763A353DF3254992664458C4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
+		9949607B0A76593B7566FAC817D3D179 /* SwipeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B647F243DD8FCB3BAC8BD2EF2AA7509 /* SwipeOptions.swift */; };
+		9EB0BFD8FB4305076CD16EB4EC483483 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */; };
+		A15E8BB0E7706A5606DB6861C0BC2C17 /* SwipeAccessibilityCustomAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4CD08D624F167554219BD02A90B6B /* SwipeAccessibilityCustomAction.swift */; };
+		A29454805C6601AC08236DD47B6AC57C /* SwipeTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080E48FBA463EB3702E5E0271E997519 /* SwipeTableViewCellDelegate.swift */; };
+		A3088DBACC68068F17A9B20A8F442ACA /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 208F09B7A6CBFD7DF50E5D375CF9E366 /* Font Awesome 5 Free-Regular-400.otf */; };
+		B0F22483E25A56DE50D9AAF24EA1881F /* SwipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34946A4D5622483E5A51AA895017E078 /* SwipeCollectionViewCell.swift */; };
+		B2222B21AEF49E9D6F70185D6DBE2A60 /* SwipeCollectionViewCell+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228D410A2166C52030565DEA06033470 /* SwipeCollectionViewCell+Accessibility.swift */; };
+		B22CD5BAA233DD92D22269BAF31049B9 /* FontAwesomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ADA6967C54FFC83F75BC904621B741 /* FontAwesomeImageView.swift */; };
+		B2A8C43F62E8EB3CCA094EA9A1D36A21 /* SwipeCellKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDCA9A6904163912C274406840650E7 /* SwipeCellKit-dummy.m */; };
+		B633D850FB892345DDA1F0DB05213C58 /* FontAwesome.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F983243C697816DEB6782D2917E1127 /* FontAwesome.swift-dummy.m */; };
+		C007638912344D9353C3623B969A6B2A /* SwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED936E2DB551524564ED9CF7430F262D /* SwipeTableViewCell.swift */; };
+		D3FB5508AB1F734D702C3438CFFE9719 /* SwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA03F054138D5EB4630A2C7DAB6DA825 /* SwipeController.swift */; };
+		DB4455BA5480E020ED3835A93E67CE47 /* SwipeTableViewCell+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416BF9131D37F9E1AB7D928CDC801CE /* SwipeTableViewCell+Accessibility.swift */; };
+		DC49FFC55ABC7A0B5B9C19CA97265EB9 /* FastScrollCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1048BF27B928A1A3CE135197750ED290 /* FastScrollCollectionView.swift */; };
+		DD296D6DF8AC3E1814624874847905C8 /* FontAwesome.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C513633431583C1BDBAA10CC16E07D /* FontAwesome.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0AA35097423A76ACDB383B8FDF83250 /* SwipeExpansionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8729C6B2C54B65A813433D86DC15D2 /* SwipeExpansionStyle.swift */; };
+		E1A6754191D10E153820FDE37C5C2A23 /* SwipeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F3C98CE30CD660A06A2067B3457EE6 /* SwipeAnimator.swift */; };
+		FB472A101F4061B28534D69491970315 /* SwipeActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2B6CED01CB41034B07F68CAE288553 /* SwipeActionButton.swift */; };
 		FFF5BA92707F567C4E4E7CB6A8FD4B70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0EA0EE7B695A5D3D8A3A77887E032CB0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3302A02A7E983EC72888900B48BCEE05;
-			remoteInfo = SwipeCellKit;
-		};
 		11C46040B80D714B8D493D1A3B1820AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -72,7 +72,21 @@
 			remoteGlobalIDString = CB2EAB5C326E4BB9AE6483289BB7C828;
 			remoteInfo = "FontAwesome.swift-FontAwesome.swift";
 		};
-		668D72523268147ABED73C75BAF03402 /* PBXContainerItemProxy */ = {
+		155468151352DA110E5176D97D10FEAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DC9DEBA24741793C049DA843DB9E92;
+			remoteInfo = FastScroll;
+		};
+		19DEE4ED97B952CEB2891743142DC476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F5091522EA0ADE16BBFD12E29853813;
+			remoteInfo = SwipeCellKit;
+		};
+		F16B402694610FA88A1460CF10921F04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -82,81 +96,100 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00010ED64562A4ED5B00E6BDC884EE98 /* SwipeExpanding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpanding.swift; path = Source/SwipeExpanding.swift; sourceTree = "<group>"; };
-		028C263E3BE4697EC93B4A8F2880351F /* SwipeFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeFeedback.swift; path = Source/SwipeFeedback.swift; sourceTree = "<group>"; };
-		02E71BC5D92D59C03100753BE4870214 /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTextRepresentable.swift; path = FontAwesome/FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
-		05F7FF0028A92CF280EFC1CFEEA52366 /* SwipeAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimator.swift; path = Source/SwipeAnimator.swift; sourceTree = "<group>"; };
-		067B013F5DE17498152D2BA4EAFB0019 /* SwipeTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCellDelegate.swift; path = Source/SwipeTableViewCellDelegate.swift; sourceTree = "<group>"; };
-		09AF997FC46153C5F15C372C91F5CEF4 /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
-		0B2ACCF6676EA62B5A85B110AD1FF041 /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Free-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
-		1511741BE948149B23A3175578838750 /* SwipeTransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitionLayout.swift; path = Source/SwipeTransitionLayout.swift; sourceTree = "<group>"; };
-		176019137ECF18C73D400E6ED0BFFB25 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
-		1F707836E5B9EBAA0B198EA264F7C77E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2051DEB7C98DCD7E43C6C6FADD2A5CB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2067346513A88FC52963C53707A7560E /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
+		01CB85DC0DFE8E5C6EA50B78E13F5A4A /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
+		02AD25D69EC58289A92D9923F518D3FB /* SwipeCellKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeCellKit.xcconfig; sourceTree = "<group>"; };
+		0678F71AE63BDBA2E83CE40AF78C8B4F /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Font Awesome 5 Brands-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
+		080E48FBA463EB3702E5E0271E997519 /* SwipeTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCellDelegate.swift; path = Source/SwipeTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		0F983243C697816DEB6782D2917E1127 /* FontAwesome.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FontAwesome.swift-dummy.m"; sourceTree = "<group>"; };
+		1048BF27B928A1A3CE135197750ED290 /* FastScrollCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastScrollCollectionView.swift; path = FastScroll/FastScrollCollectionView.swift; sourceTree = "<group>"; };
+		208F09B7A6CBFD7DF50E5D375CF9E366 /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Font Awesome 5 Free-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
+		21BD6F5563B80C7BA682D09159307E5B /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontAwesome.swift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		228D410A2166C52030565DEA06033470 /* SwipeCollectionViewCell+Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeCollectionViewCell+Accessibility.swift"; path = "Source/SwipeCollectionViewCell+Accessibility.swift"; sourceTree = "<group>"; };
+		23ED257926D1FBE85E26FC7DF5036BDF /* SwipeCellKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwipeCellKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BE1AF8CEE8818CBCFD0010AE8BEE51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		2A207408B09438E34F674CEA0D36FFF9 /* SwipeCellKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-prefix.pch"; sourceTree = "<group>"; };
-		2A2BCF9FDD6061A4BAC3CAE350221B11 /* SwipeCollectionViewCell+Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeCollectionViewCell+Accessibility.swift"; path = "Source/SwipeCollectionViewCell+Accessibility.swift"; sourceTree = "<group>"; };
-		2C24522498C69A305AAFE0D879D08431 /* SwipeActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionButton.swift; path = Source/SwipeActionButton.swift; sourceTree = "<group>"; };
-		2D8B1DC584AE3A7FBC204A57BC837C24 /* SwipeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeOptions.swift; path = Source/SwipeOptions.swift; sourceTree = "<group>"; };
-		3C66E0FA7ADDFCECEC3E41ADF2049653 /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeSegmentedControl.swift; path = FontAwesome/FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
-		424A77DB3EBD0D32DA0BF10727331977 /* SwipeExpansionStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpansionStyle.swift; path = Source/SwipeExpansionStyle.swift; sourceTree = "<group>"; };
-		453641A00E69969E831ADA2AD3403FA7 /* SwipeCellKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeCellKit.xcconfig; sourceTree = "<group>"; };
+		2EA8E4A6B6B11F5A3C588506DD987FF0 /* SwipeTableViewCell+Display.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Display.swift"; path = "Source/SwipeTableViewCell+Display.swift"; sourceTree = "<group>"; };
+		324F34592D2D41CA26DAFF203EB7512A /* FontAwesomeTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTabBarItem.swift; path = FontAwesome/FontAwesomeTabBarItem.swift; sourceTree = "<group>"; };
+		34946A4D5622483E5A51AA895017E078 /* SwipeCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeCollectionViewCell.swift; path = Source/SwipeCollectionViewCell.swift; sourceTree = "<group>"; };
+		35C513633431583C1BDBAA10CC16E07D /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
+		3A311BAE5CAB4A4B6310E31F498D5B51 /* SwipeActionTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionTransitioning.swift; path = Source/SwipeActionTransitioning.swift; sourceTree = "<group>"; };
+		3B647F243DD8FCB3BAC8BD2EF2AA7509 /* SwipeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeOptions.swift; path = Source/SwipeOptions.swift; sourceTree = "<group>"; };
+		3EEDE317715C307372001C52417FE391 /* SwipeCellKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwipeCellKit.modulemap; sourceTree = "<group>"; };
+		4145F601F2D4FF9D613DB24A60BE6AC0 /* SwipeCollectionViewCell+Display.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeCollectionViewCell+Display.swift"; path = "Source/SwipeCollectionViewCell+Display.swift"; sourceTree = "<group>"; };
+		4460327C4079D4B1D2B572E86C4B0C7A /* FastScroll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastScroll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B3110E879CEDD99BBCF692DC3C00CA /* FastScroll-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FastScroll-prefix.pch"; sourceTree = "<group>"; };
+		4784850D29DE71053733E1E592C59793 /* FastScroll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FastScroll.modulemap; sourceTree = "<group>"; };
 		4845FA9D075C487BFA7113CA17335BA2 /* Pods-QuranEnglish-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuranEnglish-dummy.m"; sourceTree = "<group>"; };
-		48EE56BF15A319A7A2F0408143376E09 /* SwipeTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCell.swift; path = Source/SwipeTableViewCell.swift; sourceTree = "<group>"; };
-		4D9C3791C18A50ED810BD7CEA922E421 /* SwipeAccessibilityCustomAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAccessibilityCustomAction.swift; path = Source/SwipeAccessibilityCustomAction.swift; sourceTree = "<group>"; };
-		5145C2BE793FB07B6B1C237AD00A97A0 /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Free-Solid-900.otf"; path = "FontAwesome/Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
+		4A0819A0EA37E283CE25CD5D1755B621 /* SwipeTransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitionLayout.swift; path = Source/SwipeTransitionLayout.swift; sourceTree = "<group>"; };
+		4A5AEBC932948F65C0792B5C156132FF /* FastScrollTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FastScrollTableView.swift; path = FastScroll/FastScrollTableView.swift; sourceTree = "<group>"; };
+		4CE734F60FC7C2341597C5084CD26BB6 /* SwipeExpanding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpanding.swift; path = Source/SwipeExpanding.swift; sourceTree = "<group>"; };
+		4FD688E463EA2EEE6447A22CDD7BDE3A /* FontAwesomeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeExtension.swift; path = FontAwesome/FontAwesomeExtension.swift; sourceTree = "<group>"; };
+		50650994A2FA2F01C3F009FB85B989CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E4F202F7A741AA292CE2171D9A323F /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
 		5597110E354522D30D1ED52635FF3808 /* Pods-QuranEnglish-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranEnglish-resources.sh"; sourceTree = "<group>"; };
-		56DAB7F9AD39E7E2AADFA220983C2A84 /* Pods_QuranEnglish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QuranEnglish.framework; path = "Pods-QuranEnglish.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57A6D6B3D904F82E56AA93FA12179D52 /* SwipeActionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionsView.swift; path = Source/SwipeActionsView.swift; sourceTree = "<group>"; };
-		6018AD3C3F070EC8FBD6370DE9D1AE4E /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = FontAwesome/Enum.swift; sourceTree = "<group>"; };
-		627272344CBEB3446C38ABA37375C0AC /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
+		57AEB649374DC63F077ABC88E8111DE2 /* FontAwesome.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.xcconfig; sourceTree = "<group>"; };
+		59900B83CEE7DF1722AE09D7D380E3DB /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Extensions.swift; sourceTree = "<group>"; };
+		5B5583AE8A4923CC46DC2BB829580B31 /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesome_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D0511940CF009B811425FE3C7AC49CC /* FastScroll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastScroll.h; path = FastScroll/FastScroll.h; sourceTree = "<group>"; };
 		63E6EE908854906B6D8B4FBD739EC2FE /* Pods-QuranEnglish-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuranEnglish-acknowledgements.markdown"; sourceTree = "<group>"; };
+		66734811C8FFF04893BDEEBAF0DC6EF6 /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageRepresentable.swift; path = FontAwesome/FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
+		67ADA6967C54FFC83F75BC904621B741 /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageView.swift; path = FontAwesome/FontAwesomeImageView.swift; sourceTree = "<group>"; };
 		68B604AB87B3575FEE2D9A2B0E9C9CE1 /* Pods-QuranEnglish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranEnglish.release.xcconfig"; sourceTree = "<group>"; };
-		6D97BCDEFF7F8D56E14A311AD7C8645F /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
-		6E3307CCAD9C5A62A91E3E34DEC8623C /* SwipeCellKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeCellKit-dummy.m"; sourceTree = "<group>"; };
-		6EEA6B284502AAC7487D7E1390256475 /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeStateRequirement.swift; path = FontAwesome/FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
-		7358F0D28B68BFAA45CC12F04086C980 /* FontAwesomeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeExtension.swift; path = FontAwesome/FontAwesomeExtension.swift; sourceTree = "<group>"; };
-		74FB8AE69E98E759D76C4308258E98A7 /* FontAwesomeTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTabBarItem.swift; path = FontAwesome/FontAwesomeTabBarItem.swift; sourceTree = "<group>"; };
-		771C84F02F6A9C490632320429F21FB1 /* SwipeTableViewCell+Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Accessibility.swift"; path = "Source/SwipeTableViewCell+Accessibility.swift"; sourceTree = "<group>"; };
+		6F8729C6B2C54B65A813433D86DC15D2 /* SwipeExpansionStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpansionStyle.swift; path = Source/SwipeExpansionStyle.swift; sourceTree = "<group>"; };
+		6FB715837E8BE592CAAF17A63195C518 /* FontAwesomeSegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeSegmentedControl.swift; path = FontAwesome/FontAwesomeSegmentedControl.swift; sourceTree = "<group>"; };
+		75D50DBE9C4E7451FE90481451900442 /* ResourceBundle-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
 		78F28BB006B75A35A9078467B1F60D48 /* Pods-QuranEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuranEnglish.debug.xcconfig"; sourceTree = "<group>"; };
-		7BDF9027DE7A7F940426099543F9E6D6 /* Swipeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Swipeable.swift; path = Source/Swipeable.swift; sourceTree = "<group>"; };
-		7CC6E2E988F8FA73E4C7808B1323B353 /* FontAwesome.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-umbrella.h"; sourceTree = "<group>"; };
-		8774B68EE6459C508C5A375A3F7A0E32 /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeBarButtonItem.swift; path = FontAwesome/FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
-		8C87BEA4F9D01F3EDDD3E98E49ED601B /* FontAwesomeImageRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageRepresentable.swift; path = FontAwesome/FontAwesomeImageRepresentable.swift; sourceTree = "<group>"; };
-		8F334A78F1C1947755822ACB857EF40D /* SwipeCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeCollectionViewCellDelegate.swift; path = Source/SwipeCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
-		9246D59583E9E9CAD565CA23A64B129E /* SwipeAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAction.swift; path = Source/SwipeAction.swift; sourceTree = "<group>"; };
-		9293B7F44557CA5B5E3F18C14C9C9A46 /* ResourceBundle-FontAwesome.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FontAwesome.swift-Info.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9BFBC0F97CBBD9A0F683C26DDA865E7D /* SwipeCellKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-umbrella.h"; sourceTree = "<group>"; };
-		A102FBA82A336ED029A66FF1F2CBA8BC /* SwipeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeController.swift; path = Source/SwipeController.swift; sourceTree = "<group>"; };
+		7BDCA9A6904163912C274406840650E7 /* SwipeCellKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeCellKit-dummy.m"; sourceTree = "<group>"; };
+		8523F1BAA4E57646CC5107D18E932B84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8947A9D1F1841842E5D00606ED134184 /* SwipeActionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionsView.swift; path = Source/SwipeActionsView.swift; sourceTree = "<group>"; };
+		8B7085D4860B8B98B2C9882DF85A3867 /* FastScroll-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FastScroll-dummy.m"; sourceTree = "<group>"; };
+		8B715DECA169FF9C0909AD51DBE213C7 /* SwipeFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeFeedback.swift; path = Source/SwipeFeedback.swift; sourceTree = "<group>"; };
+		8D079FEBDEDBF42A88C388457E1C276D /* FontAwesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesome.swift; path = FontAwesome/FontAwesome.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93AF61931DEB31D050FFC28BEBCFE7D5 /* SwipeCellKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-umbrella.h"; sourceTree = "<group>"; };
+		98D4CD08D624F167554219BD02A90B6B /* SwipeAccessibilityCustomAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAccessibilityCustomAction.swift; path = Source/SwipeAccessibilityCustomAction.swift; sourceTree = "<group>"; };
+		9B7484A014F49BD9B4D70F449CE44CB9 /* FontAwesomeStateRequirement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeStateRequirement.swift; path = FontAwesome/FontAwesomeStateRequirement.swift; sourceTree = "<group>"; };
+		A0560B799E0333BC3859B9427124261A /* FastScroll.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FastScroll.xcconfig; sourceTree = "<group>"; };
 		A7AF639F48630A369AAB591B5B339CC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		AAC975ACF65B631AEC7FBB586448740E /* Pods-QuranEnglish-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuranEnglish-frameworks.sh"; sourceTree = "<group>"; };
-		AB31678A99742E6C900BC03C6C0D878E /* SwipeCellKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeCellKit.framework; path = SwipeCellKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADF77ED9B066277D02D937A94E6A76AC /* FontAwesome_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FontAwesome_swift.framework; path = FontAwesome.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2BADD73A63DC9E94494EF0D76A211FC /* SwipeCollectionViewCell+Display.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeCollectionViewCell+Display.swift"; path = "Source/SwipeCollectionViewCell+Display.swift"; sourceTree = "<group>"; };
+		B0E30B91BEA59E225A470C7351B335A0 /* SwipeCellKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-prefix.pch"; sourceTree = "<group>"; };
+		B27C7BCA25E3B3DB4D586C211E1210B0 /* SwipeCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeCollectionViewCellDelegate.swift; path = Source/SwipeCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 		B2CB7EA70D325683EACF4C6287C07743 /* Pods-QuranEnglish-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuranEnglish-acknowledgements.plist"; sourceTree = "<group>"; };
-		BB585447F059AFA6DE46F7920AA11AFA /* SwipeCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeCollectionViewCell.swift; path = Source/SwipeCollectionViewCell.swift; sourceTree = "<group>"; };
-		BC6D09B7CB2EFDD73B65EEE3A11852D1 /* FontAwesomeImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeImageView.swift; path = FontAwesome/FontAwesomeImageView.swift; sourceTree = "<group>"; };
+		BA03F054138D5EB4630A2C7DAB6DA825 /* SwipeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeController.swift; path = Source/SwipeController.swift; sourceTree = "<group>"; };
+		BE1901E3752A448DE6C6057D46DF9FFB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C27B01C6ED6A1216C098D18CB8E60108 /* SwipeAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAction.swift; path = Source/SwipeAction.swift; sourceTree = "<group>"; };
 		C55C580E1FC5B6E9F442FE42A9553FEA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		CA99E8A6C6B7B7899D03D2FD94F93D27 /* Pods-QuranEnglish.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QuranEnglish.modulemap"; sourceTree = "<group>"; };
-		CFC5D5FA681FC50DE72FB49912807D44 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Extensions.swift; sourceTree = "<group>"; };
-		D38A035F5E8DF7B8FE3D3AF9DB812895 /* FontAwesome.swift.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FontAwesome.swift.bundle; path = FontAwesome.swift.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5DE748D84F77C8C7FA113A618D0CD36 /* SwipeTableViewCell+Display.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Display.swift"; path = "Source/SwipeTableViewCell+Display.swift"; sourceTree = "<group>"; };
-		DAFF06302328B514EBE1FACD57B978C1 /* SwipeActionTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionTransitioning.swift; path = Source/SwipeActionTransitioning.swift; sourceTree = "<group>"; };
-		EBF21CCBB8D6F2F521DF3A7F752C6433 /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; includeInIndex = 1; name = "Font Awesome 5 Brands-Regular-400.otf"; path = "FontAwesome/Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
+		C7F4306F45C48CA775C5F83E90773C87 /* Pods_QuranEnglish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuranEnglish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA99E8A6C6B7B7899D03D2FD94F93D27 /* Pods-QuranEnglish.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QuranEnglish.modulemap"; sourceTree = "<group>"; };
+		CF249048C41FA2B5271739A230AC98B0 /* FastScroll-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FastScroll-umbrella.h"; sourceTree = "<group>"; };
+		CF2B6CED01CB41034B07F68CAE288553 /* SwipeActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionButton.swift; path = Source/SwipeActionButton.swift; sourceTree = "<group>"; };
+		D0ECDFB33853FC91AB264040D2E15ED5 /* FontAwesomeBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeBarButtonItem.swift; path = FontAwesome/FontAwesomeBarButtonItem.swift; sourceTree = "<group>"; };
+		DD4166D3F1A888429F049187E1650276 /* Swipeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Swipeable.swift; path = Source/Swipeable.swift; sourceTree = "<group>"; };
+		DDAE42D7F8C79491A577111582BBB6B3 /* FontAwesomeTextRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeTextRepresentable.swift; path = FontAwesome/FontAwesomeTextRepresentable.swift; sourceTree = "<group>"; };
+		DED94BA2530B7919A32EF9FF152E996C /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "Font Awesome 5 Free-Solid-900.otf"; path = "FontAwesome/Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
+		E416BF9131D37F9E1AB7D928CDC801CE /* SwipeTableViewCell+Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Accessibility.swift"; path = "Source/SwipeTableViewCell+Accessibility.swift"; sourceTree = "<group>"; };
+		E7F3C98CE30CD660A06A2067B3457EE6 /* SwipeAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimator.swift; path = Source/SwipeAnimator.swift; sourceTree = "<group>"; };
+		E950FBD2A2E9D10C6DEC492A40774CF0 /* FontAwesomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontAwesomeView.swift; path = FontAwesome/FontAwesomeView.swift; sourceTree = "<group>"; };
+		ED936E2DB551524564ED9CF7430F262D /* SwipeTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCell.swift; path = Source/SwipeTableViewCell.swift; sourceTree = "<group>"; };
 		F3050713AEC6E01490C3B0BCF4A6D28E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7FC6021EE6DFCBFF2D77E54A6C45C56 /* Pods-QuranEnglish-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuranEnglish-umbrella.h"; sourceTree = "<group>"; };
-		FA2EDFA4309F0E357F68E2843375BFFC /* SwipeCellKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeCellKit.modulemap; sourceTree = "<group>"; };
-		FFCC49E8F2AA4CB6C819F2B6B4A5797E /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
+		FF558BC7C42B650D86C1023EFCA03A12 /* FontAwesome.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FontAwesome.swift.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		59C9AD131DEFC1A0613EF7ACF9594BCB /* Frameworks */ = {
+		3C0A0392A7A2EE8E870E8B523E6E8B72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F2A77A503548E4666284FD4E8C72B07 /* Foundation.framework in Frameworks */,
+				97BC55F763A353DF3254992664458C4A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A7F1F8E010549146F0C60EA26504850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06AD4584C8EF7FE291B4A089E13646DF /* Foundation.framework in Frameworks */,
+				9EB0BFD8FB4305076CD16EB4EC483483 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +203,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4514A72F0E6687593EB12D128108EBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66758D09676F58722A20C5F8206E88A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AF37D16DED482F2D7F59DFA4929A4710 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,17 +218,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBC5FF8002111CD134459358EBCA418D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E5AC1B829990D5196EE968FA5C92F95 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012CD0FB6405EC3FF31E8FC525B2DB3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8523F1BAA4E57646CC5107D18E932B84 /* Info.plist */,
+				3EEDE317715C307372001C52417FE391 /* SwipeCellKit.modulemap */,
+				02AD25D69EC58289A92D9923F518D3FB /* SwipeCellKit.xcconfig */,
+				7BDCA9A6904163912C274406840650E7 /* SwipeCellKit-dummy.m */,
+				B0E30B91BEA59E225A470C7351B335A0 /* SwipeCellKit-prefix.pch */,
+				93AF61931DEB31D050FFC28BEBCFE7D5 /* SwipeCellKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwipeCellKit";
+			sourceTree = "<group>";
+		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,29 +243,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1FA00550C3F31402D4B3B591BF0572AD /* Products */ = {
+		1B900D91F84E4147BA8454D0168944EE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D38A035F5E8DF7B8FE3D3AF9DB812895 /* FontAwesome.swift.bundle */,
-				ADF77ED9B066277D02D937A94E6A76AC /* FontAwesome_swift.framework */,
-				56DAB7F9AD39E7E2AADFA220983C2A84 /* Pods_QuranEnglish.framework */,
-				AB31678A99742E6C900BC03C6C0D878E /* SwipeCellKit.framework */,
+				0678F71AE63BDBA2E83CE40AF78C8B4F /* Font Awesome 5 Brands-Regular-400.otf */,
+				208F09B7A6CBFD7DF50E5D375CF9E366 /* Font Awesome 5 Free-Regular-400.otf */,
+				DED94BA2530B7919A32EF9FF152E996C /* Font Awesome 5 Free-Solid-900.otf */,
 			);
-			name = Products;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		5BA44B77F703824173A12B4890996CDF /* Support Files */ = {
+		1F58E07B008BF20E4102AAB83D96E32F /* FontAwesome.swift */ = {
 			isa = PBXGroup;
 			children = (
-				2051DEB7C98DCD7E43C6C6FADD2A5CB8 /* Info.plist */,
-				FA2EDFA4309F0E357F68E2843375BFFC /* SwipeCellKit.modulemap */,
-				453641A00E69969E831ADA2AD3403FA7 /* SwipeCellKit.xcconfig */,
-				6E3307CCAD9C5A62A91E3E34DEC8623C /* SwipeCellKit-dummy.m */,
-				2A207408B09438E34F674CEA0D36FFF9 /* SwipeCellKit-prefix.pch */,
-				9BFBC0F97CBBD9A0F683C26DDA865E7D /* SwipeCellKit-umbrella.h */,
+				52E4F202F7A741AA292CE2171D9A323F /* Enum.swift */,
+				8D079FEBDEDBF42A88C388457E1C276D /* FontAwesome.swift */,
+				D0ECDFB33853FC91AB264040D2E15ED5 /* FontAwesomeBarButtonItem.swift */,
+				4FD688E463EA2EEE6447A22CDD7BDE3A /* FontAwesomeExtension.swift */,
+				66734811C8FFF04893BDEEBAF0DC6EF6 /* FontAwesomeImageRepresentable.swift */,
+				67ADA6967C54FFC83F75BC904621B741 /* FontAwesomeImageView.swift */,
+				6FB715837E8BE592CAAF17A63195C518 /* FontAwesomeSegmentedControl.swift */,
+				9B7484A014F49BD9B4D70F449CE44CB9 /* FontAwesomeStateRequirement.swift */,
+				324F34592D2D41CA26DAFF203EB7512A /* FontAwesomeTabBarItem.swift */,
+				DDAE42D7F8C79491A577111582BBB6B3 /* FontAwesomeTextRepresentable.swift */,
+				E950FBD2A2E9D10C6DEC492A40774CF0 /* FontAwesomeView.swift */,
+				1B900D91F84E4147BA8454D0168944EE /* Resources */,
+				7C19AE1F77A2C9121892EDD075E09D81 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwipeCellKit";
+			path = FontAwesome.swift;
+			sourceTree = "<group>";
+		};
+		2EC97F15B3B4E51942823FF05465F6D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4460327C4079D4B1D2B572E86C4B0C7A /* FastScroll.framework */,
+				21BD6F5563B80C7BA682D09159307E5B /* FontAwesome.swift.bundle */,
+				5B5583AE8A4923CC46DC2BB829580B31 /* FontAwesome_swift.framework */,
+				C7F4306F45C48CA775C5F83E90773C87 /* Pods_QuranEnglish.framework */,
+				23ED257926D1FBE85E26FC7DF5036BDF /* SwipeCellKit.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		69A26C4C7DB7EA7C8DD62B3186410744 /* Targets Support Files */ = {
@@ -229,101 +293,95 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		7C19AE1F77A2C9121892EDD075E09D81 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				EABF0055EFD381C6499383ACCAD35353 /* Pods */,
-				1FA00550C3F31402D4B3B591BF0572AD /* Products */,
-				69A26C4C7DB7EA7C8DD62B3186410744 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		86D83EBE09D7EA45A6EAE9C09749B3F2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				176019137ECF18C73D400E6ED0BFFB25 /* FontAwesome.swift.modulemap */,
-				2067346513A88FC52963C53707A7560E /* FontAwesome.swift.xcconfig */,
-				09AF997FC46153C5F15C372C91F5CEF4 /* FontAwesome.swift-dummy.m */,
-				FFCC49E8F2AA4CB6C819F2B6B4A5797E /* FontAwesome.swift-prefix.pch */,
-				7CC6E2E988F8FA73E4C7808B1323B353 /* FontAwesome.swift-umbrella.h */,
-				1F707836E5B9EBAA0B198EA264F7C77E /* Info.plist */,
-				9293B7F44557CA5B5E3F18C14C9C9A46 /* ResourceBundle-FontAwesome.swift-Info.plist */,
+				FF558BC7C42B650D86C1023EFCA03A12 /* FontAwesome.swift.modulemap */,
+				57AEB649374DC63F077ABC88E8111DE2 /* FontAwesome.swift.xcconfig */,
+				0F983243C697816DEB6782D2917E1127 /* FontAwesome.swift-dummy.m */,
+				01CB85DC0DFE8E5C6EA50B78E13F5A4A /* FontAwesome.swift-prefix.pch */,
+				35C513633431583C1BDBAA10CC16E07D /* FontAwesome.swift-umbrella.h */,
+				50650994A2FA2F01C3F009FB85B989CC /* Info.plist */,
+				75D50DBE9C4E7451FE90481451900442 /* ResourceBundle-FontAwesome.swift-Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FontAwesome.swift";
 			sourceTree = "<group>";
 		};
-		A9B4D60574F41D0D90035059987D02C0 /* Resources */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				EBF21CCBB8D6F2F521DF3A7F752C6433 /* Font Awesome 5 Brands-Regular-400.otf */,
-				0B2ACCF6676EA62B5A85B110AD1FF041 /* Font Awesome 5 Free-Regular-400.otf */,
-				5145C2BE793FB07B6B1C237AD00A97A0 /* Font Awesome 5 Free-Solid-900.otf */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				986B79690A82FAD1D45F5248993C51B0 /* Pods */,
+				2EC97F15B3B4E51942823FF05465F6D5 /* Products */,
+				69A26C4C7DB7EA7C8DD62B3186410744 /* Targets Support Files */,
 			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
-		DEFF427015FA0F26BADC9C7334230296 /* FontAwesome.swift */ = {
+		7E7086AE1E6DD425EFE27B51B9585DCA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6018AD3C3F070EC8FBD6370DE9D1AE4E /* Enum.swift */,
-				6D97BCDEFF7F8D56E14A311AD7C8645F /* FontAwesome.swift */,
-				8774B68EE6459C508C5A375A3F7A0E32 /* FontAwesomeBarButtonItem.swift */,
-				7358F0D28B68BFAA45CC12F04086C980 /* FontAwesomeExtension.swift */,
-				8C87BEA4F9D01F3EDDD3E98E49ED601B /* FontAwesomeImageRepresentable.swift */,
-				BC6D09B7CB2EFDD73B65EEE3A11852D1 /* FontAwesomeImageView.swift */,
-				3C66E0FA7ADDFCECEC3E41ADF2049653 /* FontAwesomeSegmentedControl.swift */,
-				6EEA6B284502AAC7487D7E1390256475 /* FontAwesomeStateRequirement.swift */,
-				74FB8AE69E98E759D76C4308258E98A7 /* FontAwesomeTabBarItem.swift */,
-				02E71BC5D92D59C03100753BE4870214 /* FontAwesomeTextRepresentable.swift */,
-				627272344CBEB3446C38ABA37375C0AC /* FontAwesomeView.swift */,
-				A9B4D60574F41D0D90035059987D02C0 /* Resources */,
-				86D83EBE09D7EA45A6EAE9C09749B3F2 /* Support Files */,
+				4784850D29DE71053733E1E592C59793 /* FastScroll.modulemap */,
+				A0560B799E0333BC3859B9427124261A /* FastScroll.xcconfig */,
+				8B7085D4860B8B98B2C9882DF85A3867 /* FastScroll-dummy.m */,
+				45B3110E879CEDD99BBCF692DC3C00CA /* FastScroll-prefix.pch */,
+				CF249048C41FA2B5271739A230AC98B0 /* FastScroll-umbrella.h */,
+				BE1901E3752A448DE6C6057D46DF9FFB /* Info.plist */,
 			);
-			name = FontAwesome.swift;
-			path = FontAwesome.swift;
+			name = "Support Files";
+			path = "../Target Support Files/FastScroll";
 			sourceTree = "<group>";
 		};
-		DF0CF7BFF036879B6C62973241AB1C75 /* SwipeCellKit */ = {
+		986B79690A82FAD1D45F5248993C51B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CFC5D5FA681FC50DE72FB49912807D44 /* Extensions.swift */,
-				7BDF9027DE7A7F940426099543F9E6D6 /* Swipeable.swift */,
-				4D9C3791C18A50ED810BD7CEA922E421 /* SwipeAccessibilityCustomAction.swift */,
-				9246D59583E9E9CAD565CA23A64B129E /* SwipeAction.swift */,
-				2C24522498C69A305AAFE0D879D08431 /* SwipeActionButton.swift */,
-				57A6D6B3D904F82E56AA93FA12179D52 /* SwipeActionsView.swift */,
-				DAFF06302328B514EBE1FACD57B978C1 /* SwipeActionTransitioning.swift */,
-				05F7FF0028A92CF280EFC1CFEEA52366 /* SwipeAnimator.swift */,
-				BB585447F059AFA6DE46F7920AA11AFA /* SwipeCollectionViewCell.swift */,
-				2A2BCF9FDD6061A4BAC3CAE350221B11 /* SwipeCollectionViewCell+Accessibility.swift */,
-				B2BADD73A63DC9E94494EF0D76A211FC /* SwipeCollectionViewCell+Display.swift */,
-				8F334A78F1C1947755822ACB857EF40D /* SwipeCollectionViewCellDelegate.swift */,
-				A102FBA82A336ED029A66FF1F2CBA8BC /* SwipeController.swift */,
-				00010ED64562A4ED5B00E6BDC884EE98 /* SwipeExpanding.swift */,
-				424A77DB3EBD0D32DA0BF10727331977 /* SwipeExpansionStyle.swift */,
-				028C263E3BE4697EC93B4A8F2880351F /* SwipeFeedback.swift */,
-				2D8B1DC584AE3A7FBC204A57BC837C24 /* SwipeOptions.swift */,
-				48EE56BF15A319A7A2F0408143376E09 /* SwipeTableViewCell.swift */,
-				771C84F02F6A9C490632320429F21FB1 /* SwipeTableViewCell+Accessibility.swift */,
-				D5DE748D84F77C8C7FA113A618D0CD36 /* SwipeTableViewCell+Display.swift */,
-				067B013F5DE17498152D2BA4EAFB0019 /* SwipeTableViewCellDelegate.swift */,
-				1511741BE948149B23A3175578838750 /* SwipeTransitionLayout.swift */,
-				5BA44B77F703824173A12B4890996CDF /* Support Files */,
+				AADCE3C6ACF26D50F18543BE4760CA8D /* FastScroll */,
+				1F58E07B008BF20E4102AAB83D96E32F /* FontAwesome.swift */,
+				A1944898405911DCBFE979615544760E /* SwipeCellKit */,
 			);
-			name = SwipeCellKit;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A1944898405911DCBFE979615544760E /* SwipeCellKit */ = {
+			isa = PBXGroup;
+			children = (
+				59900B83CEE7DF1722AE09D7D380E3DB /* Extensions.swift */,
+				DD4166D3F1A888429F049187E1650276 /* Swipeable.swift */,
+				98D4CD08D624F167554219BD02A90B6B /* SwipeAccessibilityCustomAction.swift */,
+				C27B01C6ED6A1216C098D18CB8E60108 /* SwipeAction.swift */,
+				CF2B6CED01CB41034B07F68CAE288553 /* SwipeActionButton.swift */,
+				8947A9D1F1841842E5D00606ED134184 /* SwipeActionsView.swift */,
+				3A311BAE5CAB4A4B6310E31F498D5B51 /* SwipeActionTransitioning.swift */,
+				E7F3C98CE30CD660A06A2067B3457EE6 /* SwipeAnimator.swift */,
+				34946A4D5622483E5A51AA895017E078 /* SwipeCollectionViewCell.swift */,
+				228D410A2166C52030565DEA06033470 /* SwipeCollectionViewCell+Accessibility.swift */,
+				4145F601F2D4FF9D613DB24A60BE6AC0 /* SwipeCollectionViewCell+Display.swift */,
+				B27C7BCA25E3B3DB4D586C211E1210B0 /* SwipeCollectionViewCellDelegate.swift */,
+				BA03F054138D5EB4630A2C7DAB6DA825 /* SwipeController.swift */,
+				4CE734F60FC7C2341597C5084CD26BB6 /* SwipeExpanding.swift */,
+				6F8729C6B2C54B65A813433D86DC15D2 /* SwipeExpansionStyle.swift */,
+				8B715DECA169FF9C0909AD51DBE213C7 /* SwipeFeedback.swift */,
+				3B647F243DD8FCB3BAC8BD2EF2AA7509 /* SwipeOptions.swift */,
+				ED936E2DB551524564ED9CF7430F262D /* SwipeTableViewCell.swift */,
+				E416BF9131D37F9E1AB7D928CDC801CE /* SwipeTableViewCell+Accessibility.swift */,
+				2EA8E4A6B6B11F5A3C588506DD987FF0 /* SwipeTableViewCell+Display.swift */,
+				080E48FBA463EB3702E5E0271E997519 /* SwipeTableViewCellDelegate.swift */,
+				4A0819A0EA37E283CE25CD5D1755B621 /* SwipeTransitionLayout.swift */,
+				012CD0FB6405EC3FF31E8FC525B2DB3A /* Support Files */,
+			);
 			path = SwipeCellKit;
 			sourceTree = "<group>";
 		};
-		EABF0055EFD381C6499383ACCAD35353 /* Pods */ = {
+		AADCE3C6ACF26D50F18543BE4760CA8D /* FastScroll */ = {
 			isa = PBXGroup;
 			children = (
-				DEFF427015FA0F26BADC9C7334230296 /* FontAwesome.swift */,
-				DF0CF7BFF036879B6C62973241AB1C75 /* SwipeCellKit */,
+				5D0511940CF009B811425FE3C7AC49CC /* FastScroll.h */,
+				1048BF27B928A1A3CE135197750ED290 /* FastScrollCollectionView.swift */,
+				4A5AEBC932948F65C0792B5C156132FF /* FastScrollTableView.swift */,
+				7E7086AE1E6DD425EFE27B51B9585DCA /* Support Files */,
 			);
-			name = Pods;
+			path = FastScroll;
 			sourceTree = "<group>";
 		};
 		F2776C5B013F11AD0BEADF28358703CE /* Pods-QuranEnglish */ = {
@@ -357,6 +415,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1E0C67706B643D59C025D34D22668731 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324FFB1D56C423271FEF9BDA5A9F0162 /* SwipeCellKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2417DCDC1616BAD7D203C158FE5B0F35 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,25 +431,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44B383AD81E1FD7EC766E8738B3D5D65 /* Headers */ = {
+		95F4622B5BB3BAADB09D61148F722234 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FE0421F24D8CA8A4B57C1987E4977D1 /* Pods-QuranEnglish-umbrella.h in Headers */,
+				4AC1573F49339C94AF2C72CC198DAE94 /* Pods-QuranEnglish-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA27EDABADA3B332F3901D51DE8367CD /* Headers */ = {
+		D73CE9B73F27E32957F09EF928144BFD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3A73EA7CC5916DE551174DC2BCAACDC /* SwipeCellKit-umbrella.h in Headers */,
+				6A10E505ABF954484C3FCD744101F902 /* FastScroll-umbrella.h in Headers */,
+				466AC6747717D0A15E1BA6C69B953E96 /* FastScroll.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		15953289EF783ABCE5B22ABF9B11F418 /* Pods-QuranEnglish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44B079596871497B3BA96AFB63344C8B /* Build configuration list for PBXNativeTarget "Pods-QuranEnglish" */;
+			buildPhases = (
+				2837CA489C063613D518BB4DF03DD83C /* Sources */,
+				3C0A0392A7A2EE8E870E8B523E6E8B72 /* Frameworks */,
+				95F4622B5BB3BAADB09D61148F722234 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9C6D0BB940C25EADC8F950D407DC84E /* PBXTargetDependency */,
+				8C7D34D753230789F73B6F8100FFFD13 /* PBXTargetDependency */,
+				BADE317A1E61C95C506757DA26CC20AB /* PBXTargetDependency */,
+			);
+			name = "Pods-QuranEnglish";
+			productName = "Pods-QuranEnglish";
+			productReference = C7F4306F45C48CA775C5F83E90773C87 /* Pods_QuranEnglish.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		27DC9DEBA24741793C049DA843DB9E92 /* FastScroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2068D3BE01A1A70D3FE4D26A53E8D83D /* Build configuration list for PBXNativeTarget "FastScroll" */;
+			buildPhases = (
+				B8BBAFBC6BE6AA7CB8879E53F870BFFB /* Sources */,
+				6A7F1F8E010549146F0C60EA26504850 /* Frameworks */,
+				D73CE9B73F27E32957F09EF928144BFD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastScroll;
+			productName = FastScroll;
+			productReference = 4460327C4079D4B1D2B572E86C4B0C7A /* FastScroll.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		29124FF4E0F9AB7495AA7588B0A1A107 /* FontAwesome.swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A80A527DA4E27E5F6BB54D77CF803FB4 /* Build configuration list for PBXNativeTarget "FontAwesome.swift" */;
@@ -400,16 +504,16 @@
 			);
 			name = FontAwesome.swift;
 			productName = FontAwesome.swift;
-			productReference = ADF77ED9B066277D02D937A94E6A76AC /* FontAwesome_swift.framework */;
+			productReference = 5B5583AE8A4923CC46DC2BB829580B31 /* FontAwesome_swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3302A02A7E983EC72888900B48BCEE05 /* SwipeCellKit */ = {
+		5F5091522EA0ADE16BBFD12E29853813 /* SwipeCellKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEFC8CDEDECBA9FE24943403C33DBEBC /* Build configuration list for PBXNativeTarget "SwipeCellKit" */;
+			buildConfigurationList = 359FBB73A606B9A2BEE0D8376DAB2CB2 /* Build configuration list for PBXNativeTarget "SwipeCellKit" */;
 			buildPhases = (
-				860DE1AAFC80FB0A9B6C23C1532D52C3 /* Sources */,
-				59C9AD131DEFC1A0613EF7ACF9594BCB /* Frameworks */,
-				FA27EDABADA3B332F3901D51DE8367CD /* Headers */,
+				381EF2478468165683997D82EB5DBA7D /* Sources */,
+				A4514A72F0E6687593EB12D128108EBA /* Frameworks */,
+				1E0C67706B643D59C025D34D22668731 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -417,7 +521,7 @@
 			);
 			name = SwipeCellKit;
 			productName = SwipeCellKit;
-			productReference = AB31678A99742E6C900BC03C6C0D878E /* SwipeCellKit.framework */;
+			productReference = 23ED257926D1FBE85E26FC7DF5036BDF /* SwipeCellKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CB2EAB5C326E4BB9AE6483289BB7C828 /* FontAwesome.swift-FontAwesome.swift */ = {
@@ -434,27 +538,8 @@
 			);
 			name = "FontAwesome.swift-FontAwesome.swift";
 			productName = "FontAwesome.swift-FontAwesome.swift";
-			productReference = D38A035F5E8DF7B8FE3D3AF9DB812895 /* FontAwesome.swift.bundle */;
+			productReference = 21BD6F5563B80C7BA682D09159307E5B /* FontAwesome.swift.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		D37823AA4ABCDB3BC23A1B5F7E6E949B /* Pods-QuranEnglish */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 438D4606EC22B24BBC0E313DFD37FBF1 /* Build configuration list for PBXNativeTarget "Pods-QuranEnglish" */;
-			buildPhases = (
-				661E89962ED9F0CC6D3802F7D9CEE433 /* Sources */,
-				BBC5FF8002111CD134459358EBCA418D /* Frameworks */,
-				44B383AD81E1FD7EC766E8738B3D5D65 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7ED71E82A44E876478B6584A966CE56B /* PBXTargetDependency */,
-				0259896FAED1D38F628A3AD3560050C2 /* PBXTargetDependency */,
-			);
-			name = "Pods-QuranEnglish";
-			productName = "Pods-QuranEnglish";
-			productReference = 56DAB7F9AD39E7E2AADFA220983C2A84 /* Pods_QuranEnglish.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -473,14 +558,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1FA00550C3F31402D4B3B591BF0572AD /* Products */;
+			productRefGroup = 2EC97F15B3B4E51942823FF05465F6D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				27DC9DEBA24741793C049DA843DB9E92 /* FastScroll */,
 				29124FF4E0F9AB7495AA7588B0A1A107 /* FontAwesome.swift */,
 				CB2EAB5C326E4BB9AE6483289BB7C828 /* FontAwesome.swift-FontAwesome.swift */,
-				D37823AA4ABCDB3BC23A1B5F7E6E949B /* Pods-QuranEnglish */,
-				3302A02A7E983EC72888900B48BCEE05 /* SwipeCellKit */,
+				15953289EF783ABCE5B22ABF9B11F418 /* Pods-QuranEnglish */,
+				5F5091522EA0ADE16BBFD12E29853813 /* SwipeCellKit */,
 			);
 		};
 /* End PBXProject section */
@@ -507,11 +593,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		661E89962ED9F0CC6D3802F7D9CEE433 /* Sources */ = {
+		2837CA489C063613D518BB4DF03DD83C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C14675C5A6D7756318CCD4EFDF57C4FD /* Pods-QuranEnglish-dummy.m in Sources */,
+				5002E94AB7C01CCB8392B8B5305862D6 /* Pods-QuranEnglish-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381EF2478468165683997D82EB5DBA7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA9F91817149DFC9124C7961CBCCB43 /* Extensions.swift in Sources */,
+				06774391DFCF08B814006FDD39D401E6 /* Swipeable.swift in Sources */,
+				A15E8BB0E7706A5606DB6861C0BC2C17 /* SwipeAccessibilityCustomAction.swift in Sources */,
+				84B785BFB90466657EAD1A335D0EEF1B /* SwipeAction.swift in Sources */,
+				FB472A101F4061B28534D69491970315 /* SwipeActionButton.swift in Sources */,
+				824E0A59A33F216EAF92B0EDC31E6D2E /* SwipeActionsView.swift in Sources */,
+				09F0F024D209BBF9C44B486FEBC86E22 /* SwipeActionTransitioning.swift in Sources */,
+				E1A6754191D10E153820FDE37C5C2A23 /* SwipeAnimator.swift in Sources */,
+				B2A8C43F62E8EB3CCA094EA9A1D36A21 /* SwipeCellKit-dummy.m in Sources */,
+				B2222B21AEF49E9D6F70185D6DBE2A60 /* SwipeCollectionViewCell+Accessibility.swift in Sources */,
+				2F800B55413B1D3A1FBB3104D635149E /* SwipeCollectionViewCell+Display.swift in Sources */,
+				B0F22483E25A56DE50D9AAF24EA1881F /* SwipeCollectionViewCell.swift in Sources */,
+				6A51F3430D0B9340E7010DC9757AFAC2 /* SwipeCollectionViewCellDelegate.swift in Sources */,
+				D3FB5508AB1F734D702C3438CFFE9719 /* SwipeController.swift in Sources */,
+				41418236DA1975BD7E87379336100E09 /* SwipeExpanding.swift in Sources */,
+				E0AA35097423A76ACDB383B8FDF83250 /* SwipeExpansionStyle.swift in Sources */,
+				08CDF76D5360385D79ECD37AA8F1A9C9 /* SwipeFeedback.swift in Sources */,
+				9949607B0A76593B7566FAC817D3D179 /* SwipeOptions.swift in Sources */,
+				DB4455BA5480E020ED3835A93E67CE47 /* SwipeTableViewCell+Accessibility.swift in Sources */,
+				52AF1055808BF41F98088E5BFB95B994 /* SwipeTableViewCell+Display.swift in Sources */,
+				C007638912344D9353C3623B969A6B2A /* SwipeTableViewCell.swift in Sources */,
+				A29454805C6601AC08236DD47B6AC57C /* SwipeTableViewCellDelegate.swift in Sources */,
+				1362F41BD35C0DF6C004BC4907318183 /* SwipeTransitionLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,33 +650,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		860DE1AAFC80FB0A9B6C23C1532D52C3 /* Sources */ = {
+		B8BBAFBC6BE6AA7CB8879E53F870BFFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9DA24E4AA29E67070DEBB086B464257 /* Extensions.swift in Sources */,
-				BD55C2B378FB29B9404E7D4AC2A0DA19 /* Swipeable.swift in Sources */,
-				6E4503E76971D28696F25B837E0CDAE4 /* SwipeAccessibilityCustomAction.swift in Sources */,
-				AA3A69EC339DC7DDF6549213E06A50CF /* SwipeAction.swift in Sources */,
-				21EFCC882B890A1E0A27754A1E793D31 /* SwipeActionButton.swift in Sources */,
-				95723374286337486F925AA591C890B5 /* SwipeActionsView.swift in Sources */,
-				AA0FDC1B2D069051D51D81C37D25D55D /* SwipeActionTransitioning.swift in Sources */,
-				D863E3666DD4DD60C172784E5718F1EE /* SwipeAnimator.swift in Sources */,
-				AA63E5608FE170C6F97BE221E9645577 /* SwipeCellKit-dummy.m in Sources */,
-				036EF99C90C8F864C51959E8B5668033 /* SwipeCollectionViewCell+Accessibility.swift in Sources */,
-				E83D7188DF18CE612E878399854A0357 /* SwipeCollectionViewCell+Display.swift in Sources */,
-				2B36BFB89AAE5E2FAB888A5B20315095 /* SwipeCollectionViewCell.swift in Sources */,
-				1387CD89443B3A59794BFA085090F5EE /* SwipeCollectionViewCellDelegate.swift in Sources */,
-				9F54027DCB0DA088F576D4A881C11D86 /* SwipeController.swift in Sources */,
-				6F6366A86F1BD91B926FC18DB07184A5 /* SwipeExpanding.swift in Sources */,
-				CF9AC5BBE4BC5E9B561AFF5A682D3F49 /* SwipeExpansionStyle.swift in Sources */,
-				6A5241DD6B999DE935958998B007883D /* SwipeFeedback.swift in Sources */,
-				6829147BAA51C35412B20F67D18D3ABA /* SwipeOptions.swift in Sources */,
-				80EB2D5BE4C80C20B5BB3A6031D30D1D /* SwipeTableViewCell+Accessibility.swift in Sources */,
-				95EFDA2029848A74F367B1986D043018 /* SwipeTableViewCell+Display.swift in Sources */,
-				057B82F13763902FB00C88B775FDAD19 /* SwipeTableViewCell.swift in Sources */,
-				8AA278787337C1523CA469554328018E /* SwipeTableViewCellDelegate.swift in Sources */,
-				CDA070E3A8973396C059474AEF69BF50 /* SwipeTransitionLayout.swift in Sources */,
+				84E8F9FCC21D064B28794D7B83FC8397 /* FastScroll-dummy.m in Sources */,
+				DC49FFC55ABC7A0B5B9C19CA97265EB9 /* FastScrollCollectionView.swift in Sources */,
+				6634454EF61CFEADDB141DADC25B651C /* FastScrollTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,30 +670,68 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0259896FAED1D38F628A3AD3560050C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwipeCellKit;
-			target = 3302A02A7E983EC72888900B48BCEE05 /* SwipeCellKit */;
-			targetProxy = 0EA0EE7B695A5D3D8A3A77887E032CB0 /* PBXContainerItemProxy */;
-		};
 		168EED59381E6A33050008C1EBD91077 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "FontAwesome.swift-FontAwesome.swift";
 			target = CB2EAB5C326E4BB9AE6483289BB7C828 /* FontAwesome.swift-FontAwesome.swift */;
 			targetProxy = 11C46040B80D714B8D493D1A3B1820AC /* PBXContainerItemProxy */;
 		};
-		7ED71E82A44E876478B6584A966CE56B /* PBXTargetDependency */ = {
+		8C7D34D753230789F73B6F8100FFFD13 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FontAwesome.swift;
 			target = 29124FF4E0F9AB7495AA7588B0A1A107 /* FontAwesome.swift */;
-			targetProxy = 668D72523268147ABED73C75BAF03402 /* PBXContainerItemProxy */;
+			targetProxy = F16B402694610FA88A1460CF10921F04 /* PBXContainerItemProxy */;
+		};
+		BADE317A1E61C95C506757DA26CC20AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwipeCellKit;
+			target = 5F5091522EA0ADE16BBFD12E29853813 /* SwipeCellKit */;
+			targetProxy = 19DEE4ED97B952CEB2891743142DC476 /* PBXContainerItemProxy */;
+		};
+		F9C6D0BB940C25EADC8F950D407DC84E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FastScroll;
+			target = 27DC9DEBA24741793C049DA843DB9E92 /* FastScroll */;
+			targetProxy = 155468151352DA110E5176D97D10FEAA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		14F6BDE9518327BB588CD30E83D148A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0560B799E0333BC3859B9427124261A /* FastScroll.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FastScroll/FastScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FastScroll/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FastScroll/FastScroll.modulemap";
+				PRODUCT_NAME = FastScroll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		21B519DB3A7D9E3BF95432CAB50F2332 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2067346513A88FC52963C53707A7560E /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = 57AEB649374DC63F077ABC88E8111DE2 /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
@@ -613,7 +747,7 @@
 		};
 		251902A9C9E14CF831631550858D57CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2067346513A88FC52963C53707A7560E /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = 57AEB649374DC63F077ABC88E8111DE2 /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -642,9 +776,43 @@
 			};
 			name = Debug;
 		};
-		4549F159F789C290A294D10C00CC5543 /* Debug */ = {
+		29817034E1E381D27868B3DB3DD2A433 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 453641A00E69969E831ADA2AD3403FA7 /* SwipeCellKit.xcconfig */;
+			baseConfigurationReference = 68B604AB87B3575FEE2D9A2B0E9C9CE1 /* Pods-QuranEnglish.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-QuranEnglish/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuranEnglish/Pods-QuranEnglish.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QuranEnglish;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		45B816E6D07249DB6466BD7B1DBA7E7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02AD25D69EC58289A92D9923F518D3FB /* SwipeCellKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -665,13 +833,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		621AB785940626574F07364CB14760E1 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -728,43 +897,9 @@
 			};
 			name = Release;
 		};
-		8BA551BE5E4FE690F3AF60510CC475FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68B604AB87B3575FEE2D9A2B0E9C9CE1 /* Pods-QuranEnglish.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-QuranEnglish/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuranEnglish/Pods-QuranEnglish.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_QuranEnglish;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		9E94B853A7284D8B491B0751772C5170 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2067346513A88FC52963C53707A7560E /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = 57AEB649374DC63F077ABC88E8111DE2 /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FontAwesome.swift";
@@ -840,7 +975,7 @@
 		};
 		D09619321486AC24B8FC9D8771A449EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2067346513A88FC52963C53707A7560E /* FontAwesome.swift.xcconfig */;
+			baseConfigurationReference = 57AEB649374DC63F077ABC88E8111DE2 /* FontAwesome.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -870,9 +1005,9 @@
 			};
 			name = Release;
 		};
-		EDDC23A9A23DC009B1BF4AF6CCE0F1A6 /* Release */ = {
+		DA302A9D94B1E34E7D64695E66833986 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 453641A00E69969E831ADA2AD3403FA7 /* SwipeCellKit.xcconfig */;
+			baseConfigurationReference = 02AD25D69EC58289A92D9923F518D3FB /* SwipeCellKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -893,16 +1028,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		F8C41E0B32722C8FC0240746F7DFC2BA /* Debug */ = {
+		DB90D291DBC51529347113543A75768F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78F28BB006B75A35A9078467B1F60D48 /* Pods-QuranEnglish.debug.xcconfig */;
 			buildSettings = {
@@ -936,9 +1070,49 @@
 			};
 			name = Debug;
 		};
+		E739F05330C7B27878897432254AA347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0560B799E0333BC3859B9427124261A /* FastScroll.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FastScroll/FastScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FastScroll/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FastScroll/FastScroll.modulemap";
+				PRODUCT_NAME = FastScroll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2068D3BE01A1A70D3FE4D26A53E8D83D /* Build configuration list for PBXNativeTarget "FastScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E739F05330C7B27878897432254AA347 /* Debug */,
+				14F6BDE9518327BB588CD30E83D148A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -948,11 +1122,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		438D4606EC22B24BBC0E313DFD37FBF1 /* Build configuration list for PBXNativeTarget "Pods-QuranEnglish" */ = {
+		359FBB73A606B9A2BEE0D8376DAB2CB2 /* Build configuration list for PBXNativeTarget "SwipeCellKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F8C41E0B32722C8FC0240746F7DFC2BA /* Debug */,
-				8BA551BE5E4FE690F3AF60510CC475FB /* Release */,
+				DA302A9D94B1E34E7D64695E66833986 /* Debug */,
+				45B816E6D07249DB6466BD7B1DBA7E7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44B079596871497B3BA96AFB63344C8B /* Build configuration list for PBXNativeTarget "Pods-QuranEnglish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB90D291DBC51529347113543A75768F /* Debug */,
+				29817034E1E381D27868B3DB3DD2A433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -962,15 +1145,6 @@
 			buildConfigurations = (
 				251902A9C9E14CF831631550858D57CA /* Debug */,
 				D09619321486AC24B8FC9D8771A449EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DEFC8CDEDECBA9FE24943403C33DBEBC /* Build configuration list for PBXNativeTarget "SwipeCellKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4549F159F789C290A294D10C00CC5543 /* Debug */,
-				EDDC23A9A23DC009B1BF4AF6CCE0F1A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

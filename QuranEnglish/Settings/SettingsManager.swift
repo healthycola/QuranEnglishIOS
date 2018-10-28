@@ -17,29 +17,69 @@ enum Setting {
     case arabicFontSize(CGFloat)
     case englishFontSize(CGFloat)
     case theme(Theme)
+    
+    var defaultKey: String {
+        switch self {
+        case .arabicFontSize:
+            return "arabicFontSize"
+        case .englishFontSize:
+            return "englishFontSize"
+        case .theme:
+            return "theme"
+        }
+    }
+    
+    func saveToUserDefaults() {
+        let defaults = UserDefaults.standard
+        switch self {
+        case .arabicFontSize(let value):
+            defaults.set(value, forKey: self.defaultKey)
+        case .englishFontSize(let value):
+            defaults.set(value, forKey: self.defaultKey)
+        case .theme(let theme):
+            defaults.set(theme.rawValue, forKey: self.defaultKey)
+        }
+    }
 }
 
-class SettingsManager {
+protocol ISettings {
+    var englishFontSize: CGFloat { get }
+    var arabicFontSize: CGFloat { get }
+    var theme: Theme { get }
+}
+
+class SettingsManager: ISettings {
     static let shared = SettingsManager()
     
-    private init() { }
+    private init() {
+        self.arabicFontSize = UserDefaults.standard.value(forKey: Setting.arabicFontSize(0).defaultKey) as? CGFloat ?? 30
+        self.englishFontSize = UserDefaults.standard.value(forKey: Setting.englishFontSize(0).defaultKey) as? CGFloat ?? 14
+        let themeString = UserDefaults.standard.value(forKey: Setting.theme(.theme1).defaultKey) as? String ?? ""
+        self.theme = Theme(rawValue: themeString) ?? .theme1
+    }
     
     private var observers: [ObjectIdentifier : SettingsObserver] = [:]
     var arabicFontSize: CGFloat = 30 {
         didSet {
-            self.notifyObservers(updatedSetting: Setting.arabicFontSize(arabicFontSize))
+            let setting = Setting.arabicFontSize(arabicFontSize)
+            self.notifyObservers(updatedSetting: setting)
+            setting.saveToUserDefaults()
         }
     }
     
     var englishFontSize: CGFloat = 12 {
         didSet {
+            let setting = Setting.englishFontSize(englishFontSize)
             self.notifyObservers(updatedSetting: Setting.englishFontSize(englishFontSize))
+            setting.saveToUserDefaults()
         }
     }
     
     var theme: Theme = .theme1 {
         didSet {
-            self.notifyObservers(updatedSetting: Setting.theme(theme))
+            let setting = Setting.theme(theme)
+            self.notifyObservers(updatedSetting: setting)
+            setting.saveToUserDefaults()
             self.applyTheme(with: theme)
         }
     }
@@ -47,49 +87,6 @@ class SettingsManager {
     func applyTheme(with theme: Theme) {
         UINavigationBar.appearance().barStyle = UIBarStyle.blackTranslucent
         UINavigationBar.appearance().tintColor = theme.backgroundColor
-//        navigationController?.navigationBar.barStyle = UIBarStyle.BlackTranslucent
-//        navigationController?.navigationBar.barTintColor  = theme.backgroundColor;
-        
-        // You get your current (selected) theme and apply the main color to the tintColor property of your application’s window.
-//        let sharedApplication = UIApplication.shared
-//        sharedApplication.delegate?.window??.tintColor = theme.mainColor
-//
-//        UINavigationBar.appearance().barStyle = theme.barStyle
-//        UINavigationBar.appearance().setBackgroundImage(theme.navigationBackgroundImage, for: .default)
-//        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "backArrow")
-//        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "backArrowMaskFixed")
-//
-//        UITabBar.appearance().barStyle = theme.barStyle
-//        UITabBar.appearance().backgroundImage = theme.tabBarBackgroundImage
-//
-//        let tabIndicator = UIImage(named: "tabBarSelectionIndicator")?.withRenderingMode(.alwaysTemplate)
-//        let tabResizableIndicator = tabIndicator?.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 2.0, bottom: 0, right: 2.0))
-//        UITabBar.appearance().selectionIndicatorImage = tabResizableIndicator
-//
-//        let controlBackground = UIImage(named: "controlBackground")?.withRenderingMode(.alwaysTemplate)
-//            .resizableImage(withCapInsets: UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3))
-//        let controlSelectedBackground = UIImage(named: "controlSelectedBackground")?
-//            .withRenderingMode(.alwaysTemplate)
-//            .resizableImage(withCapInsets: UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3))
-//
-//        UISegmentedControl.appearance().setBackgroundImage(controlBackground, for: .normal, barMetrics: .default)
-//        UISegmentedControl.appearance().setBackgroundImage(controlSelectedBackground, for: .selected, barMetrics: .default)
-//
-//        UIStepper.appearance().setBackgroundImage(controlBackground, for: .normal)
-//        UIStepper.appearance().setBackgroundImage(controlBackground, for: .disabled)
-//        UIStepper.appearance().setBackgroundImage(controlBackground, for: .highlighted)
-//        UIStepper.appearance().setDecrementImage(UIImage(named: "fewerPaws"), for: .normal)
-//        UIStepper.appearance().setIncrementImage(UIImage(named: "morePaws"), for: .normal)
-//
-//        UISlider.appearance().setThumbImage(UIImage(named: "sliderThumb"), for: .normal)
-//        UISlider.appearance().setMaximumTrackImage(UIImage(named: "maximumTrack")?
-//            .resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 0.0, bottom: 0, right: 6.0)), for: .normal)
-//        UISlider.appearance().setMinimumTrackImage(UIImage(named: "minimumTrack")?
-//            .withRenderingMode(.alwaysTemplate)
-//            .resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 6.0, bottom: 0, right: 0)), for: .normal)
-//
-//        UISwitch.appearance().onTintColor = theme.mainColor.withAlphaComponent(0.3)
-//        UISwitch.appearance().thumbTintColor = theme.mainColor
     }
     
     func addObserver(_ settingsObserver: SettingsObserver & AnyObject) {

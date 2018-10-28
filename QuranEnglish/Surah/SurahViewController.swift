@@ -10,13 +10,15 @@ import Foundation
 import FontAwesome_swift
 import UIKit
 import SwipeCellKit
+import FastScroll
 
 class SurahViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     private static let offsetFromTopOfNavigationTitleHeader: CGFloat = 10
-    @IBOutlet fileprivate weak var tableView: UITableView! {
+    @IBOutlet fileprivate weak var tableView: FastScrollTableView! {
         didSet {
             tableView.estimatedRowHeight = 80;
             tableView.rowHeight = UITableView.automaticDimension
+            tableView.setup()
         }
     }
     fileprivate var titleTopConstraint: NSLayoutConstraint?
@@ -46,6 +48,11 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
             
             let bookmarkAyaIndexInt = Int(bookmarkAyaIndex)
             self.bookmarks[bookmarkAyaIndexInt] = $0
+        }
+        
+        tableView.updateWithSettings(SettingsManager.shared)
+        tableView.bubbleNameForIndexPath = { indexPath in
+            return "\(indexPath.row + 1)"
         }
     }
     
@@ -202,6 +209,20 @@ extension SurahViewController: UIScrollViewDelegate {
         titleTopConstraint?.constant = labelOffset
         
         translatedTitleTopConstraint?.constant = min(SurahViewController.offsetFromTopOfNavigationTitleHeader, labelOffset - navigationContainer.frame.maxY + SurahViewController.offsetFromTopOfNavigationTitleHeader)
+        
+        tableView.scrollViewDidScroll(scrollView)
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView : UIScrollView) {
+        tableView.scrollViewWillBeginDragging(scrollView)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView : UIScrollView) {
+        tableView.scrollViewDidEndDecelerating(scrollView)
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView : UIScrollView, willDecelerate decelerate : Bool) {
+        tableView.scrollViewDidEndDragging(scrollView, willDecelerate : decelerate)
     }
 }
 

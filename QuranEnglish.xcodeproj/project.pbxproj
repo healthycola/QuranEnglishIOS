@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31C71B12DDD92A6D3936F6C3 /* Pods_QuranEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D649B396EAF233ED739E6CDD /* Pods_QuranEnglish.framework */; };
+		8A1EE5832186348F009F7DC9 /* FastScroll+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EE5822186348F009F7DC9 /* FastScroll+Extensions.swift */; };
 		8A392F612172738700DA1200 /* QuranParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A392F602172738700DA1200 /* QuranParsingManager.swift */; };
 		8A392F63217273B900DA1200 /* QuranMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A392F62217273B900DA1200 /* QuranMetadataParser.swift */; };
 		8A4E68F82172B6E10050B5BF /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E68F72172B6E10050B5BF /* DataParser.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		5381E0BA815159F0C43BDD2A /* Pods-QuranEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuranEnglish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuranEnglish/Pods-QuranEnglish.debug.xcconfig"; sourceTree = "<group>"; };
+		8A1EE5822186348F009F7DC9 /* FastScroll+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FastScroll+Extensions.swift"; sourceTree = "<group>"; };
 		8A392F602172738700DA1200 /* QuranParsingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranParsingManager.swift; sourceTree = "<group>"; };
 		8A392F62217273B900DA1200 /* QuranMetadataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranMetadataParser.swift; sourceTree = "<group>"; };
 		8A4E68F72172B6E10050B5BF /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				8AE275BE217AFB0900D19EFD /* UIButton+Extensions.swift */,
 				8AE275C0217B05F000D19EFD /* UIBarButtonItem+Extensions.swift */,
 				8AE275CB217BBCFB00D19EFD /* UIColor+Extensions.swift */,
+				8A1EE5822186348F009F7DC9 /* FastScroll+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -413,11 +416,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-QuranEnglish/Pods-QuranEnglish-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FastScroll/FastScroll.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FastScroll.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
@@ -463,6 +468,7 @@
 				8AE275C8217B0BE700D19EFD /* SettingsManager.swift in Sources */,
 				8AE275CC217BBCFB00D19EFD /* UIColor+Extensions.swift in Sources */,
 				8A7FA25820B3D6FB00991490 /* Aya.swift in Sources */,
+				8A1EE5832186348F009F7DC9 /* FastScroll+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

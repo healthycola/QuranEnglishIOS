@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5F5091522EA0ADE16BBFD12E29853813'
-               BlueprintName = 'SwipeCellKit'
+               BlueprintIdentifier = '27DC9DEBA24741793C049DA843DB9E92'
+               BlueprintName = 'FastScroll'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwipeCellKit.framework'>
+               BuildableName = 'FastScroll.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

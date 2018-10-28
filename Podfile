@@ -8,4 +8,5 @@ target 'QuranEnglish' do
   # Pods for QuranEnglish
   pod 'FontAwesome.swift', '~> 1.4.5'
   pod 'SwipeCellKit'
+  pod 'FastScroll'
 end
