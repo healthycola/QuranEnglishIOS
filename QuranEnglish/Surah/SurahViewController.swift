@@ -18,6 +18,7 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
         didSet {
             tableView.estimatedRowHeight = 80;
             tableView.rowHeight = UITableView.automaticDimension
+            tableView.registerSurahViewCell()
             tableView.setup()
         }
     }
@@ -152,7 +153,7 @@ class SurahViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "surahViewCell", for: indexPath) as! SurahViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: SurahViewCell.reuseIdentifier, for: indexPath) as! SurahViewCell
         cell.setup(
             theme: SettingsManager.shared.theme,
             arabicText: getSurah().ayas[indexPath.row].text,
@@ -256,7 +257,9 @@ extension SurahViewController: SwipeTableViewCellDelegate {
             return [bookmarkAction]
         } else {
             let notesActions = SwipeAction(style: .default, title: "Notes") { action, indexPath in
-                print("Notes Actions")
+                self.pushSurahNotesController(quran: self.quran, data: [
+                    NotesData.aya(surahIndex: self.surahIndex, ayaIndex: indexPath.row)
+                    ])
             }
             
             // customize the action appearance
@@ -274,66 +277,5 @@ extension SurahViewController: SwipeTableViewCellDelegate {
         options.expansionStyle = .selection
         options.backgroundColor = SettingsManager.shared.theme.backgroundColor
         return options
-    }
-}
-
-class SurahViewCell: SwipeTableViewCell {
-    @IBOutlet private weak var arabicText: UILabel!
-    @IBOutlet private weak var translation: UILabel!
-    @IBOutlet private weak var index: UILabel!
-    @IBOutlet private weak var secondaryBackground: UIView!
-    @IBOutlet private weak var secondaryBackgroundShadow: UIView!
-    @IBOutlet private weak var bookmarkView: UIView!
-    
-    private var theme: Theme!
-    
-    func setup(theme: Theme, arabicText: String, index: Int, translation: String?, isBookmarked: Bool) {
-        backgroundColor = theme.backgroundColor
-        secondaryBackground.backgroundColor = theme.secondaryBackgroundColor
-        secondaryBackgroundShadow.backgroundColor = theme.foreground
-        self.theme = theme
-        self.arabicText.textColor = theme.foreground
-        self.translation.textColor = theme.foreground
-        self.index.textColor = theme.foreground
-        self.bookmarkView.backgroundColor = isBookmarked ? theme.primaryTint : UIColor.clear
-        
-        setArabicText(arabicText)
-        setTranslationText(translation)
-        self.index.text = String(index)
-    }
-    
-    func setBookmark(_ value: Bool) {
-        self.bookmarkView.backgroundColor = value ? theme.primaryTint : UIColor.clear
-    }
-    
-    private func setArabicText(_ arabicText: String) {
-        let attributedString = NSMutableAttributedString(string: arabicText)
-        // *** Create instance of `NSMutableParagraphStyle`
-        let paragraphStyle = NSMutableParagraphStyle()
-        // *** set LineSpacing property in points ***
-        paragraphStyle.lineSpacing = 2 // Whatever line spacing you want in points
-        paragraphStyle.alignment = .right
-        // *** Apply attribute to string ***
-        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
-        attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont.currentArabicFont(), range: NSMakeRange(0, attributedString.length))
-        // *** Set Attributed String to your label ***
-        self.arabicText.attributedText = attributedString
-    }
-    
-    private func setTranslationText(_ text: String?) {
-        if let text = text {
-            let attributedString = NSMutableAttributedString(string: text)
-            // *** Create instance of `NSMutableParagraphStyle`
-            let paragraphStyle = NSMutableParagraphStyle()
-            // *** set LineSpacing property in points ***
-            paragraphStyle.lineSpacing = 4 // Whatever line spacing you want in points
-            // *** Apply attribute to string ***
-            attributedString.addAttribute(NSAttributedString.Key.paragraphStyle, value:paragraphStyle, range:NSMakeRange(0, attributedString.length))
-            attributedString.addAttribute(NSAttributedString.Key.font, value: UIFont.currentEnglishFont(), range: NSMakeRange(0, attributedString.length))
-            // *** Set Attributed String to your label ***
-            self.translation.attributedText = attributedString
-        } else {
-            self.translation.text = ""
-        }
     }
 }

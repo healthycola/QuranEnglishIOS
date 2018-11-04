@@ -20,6 +20,7 @@ enum ArabicFont: String {
 enum EnglishFont: String {
     case Palatino = "Palatino-Roman"
     case OpenSans = "OpenSans-Regular"
+    case OpenSansItalic = "OpenSans-Italic"
 }
 
 extension UIFont {
@@ -42,7 +43,11 @@ extension UIFont {
         return UIFont.arabicFont(arabicFont: .AlNileBold, size: SettingsManager.shared.arabicFontSize)
     }
     
-    static func currentEnglishFont() -> UIFont {
-        return UIFont.englishFont(englishFont: .OpenSans, size: SettingsManager.shared.englishFontSize)
+    static func currentEnglishFont(isItalic: Bool = false) -> UIFont {
+        var font = EnglishFont.OpenSans
+        if isItalic {
+            font = EnglishFont.OpenSansItalic
+        }
+        return UIFont.englishFont(englishFont: font, size: SettingsManager.shared.englishFontSize)
     }
 }

@@ -28,6 +28,7 @@ class LoadingScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTheme()
         setSpinnerVisibility()
         QuranDocument.shared().initialize { (error) in
             self.setErrorVisibility(error: error)
@@ -40,5 +41,12 @@ class LoadingScreen: UIViewController {
             viewController.quran = QuranDocument.shared().quran!
             self.navigationController?.pushViewController(viewController, animated: true)
         }
+    }
+    
+    fileprivate func setupTheme() {
+        let theme = SettingsManager.shared.theme
+        view.backgroundColor = theme.backgroundColor
+        error.textColor = theme.foreground
+        spinner.tintColor = theme.primaryTint
     }
 }

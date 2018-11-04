@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		31C71B12DDD92A6D3936F6C3 /* Pods_QuranEnglish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D649B396EAF233ED739E6CDD /* Pods_QuranEnglish.framework */; };
 		8A1EE5832186348F009F7DC9 /* FastScroll+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EE5822186348F009F7DC9 /* FastScroll+Extensions.swift */; };
+		8A1EE585218656D8009F7DC9 /* SurahNotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EE584218656D8009F7DC9 /* SurahNotesController.swift */; };
+		8A1EE587218F5B7A009F7DC9 /* SurahTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EE586218F5B7A009F7DC9 /* SurahTableViewCell.swift */; };
+		8A1EE589218F5CA8009F7DC9 /* SurahTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1EE588218F5CA8009F7DC9 /* SurahTableViewCell.xib */; };
+		8A1EE58B218F6132009F7DC9 /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EE58A218F6132009F7DC9 /* ViewConstants.swift */; };
+		8A1EE591218F7F19009F7DC9 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1EE590218F7F19009F7DC9 /* OpenSans-Italic.ttf */; };
 		8A392F612172738700DA1200 /* QuranParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A392F602172738700DA1200 /* QuranParsingManager.swift */; };
 		8A392F63217273B900DA1200 /* QuranMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A392F62217273B900DA1200 /* QuranMetadataParser.swift */; };
 		8A4E68F82172B6E10050B5BF /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E68F72172B6E10050B5BF /* DataParser.swift */; };
@@ -57,6 +62,11 @@
 /* Begin PBXFileReference section */
 		5381E0BA815159F0C43BDD2A /* Pods-QuranEnglish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuranEnglish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuranEnglish/Pods-QuranEnglish.debug.xcconfig"; sourceTree = "<group>"; };
 		8A1EE5822186348F009F7DC9 /* FastScroll+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FastScroll+Extensions.swift"; sourceTree = "<group>"; };
+		8A1EE584218656D8009F7DC9 /* SurahNotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahNotesController.swift; sourceTree = "<group>"; };
+		8A1EE586218F5B7A009F7DC9 /* SurahTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurahTableViewCell.swift; sourceTree = "<group>"; };
+		8A1EE588218F5CA8009F7DC9 /* SurahTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurahTableViewCell.xib; sourceTree = "<group>"; };
+		8A1EE58A218F6132009F7DC9 /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
+		8A1EE590218F7F19009F7DC9 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		8A392F602172738700DA1200 /* QuranParsingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranParsingManager.swift; sourceTree = "<group>"; };
 		8A392F62217273B900DA1200 /* QuranMetadataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranMetadataParser.swift; sourceTree = "<group>"; };
 		8A4E68F72172B6E10050B5BF /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
@@ -144,6 +154,9 @@
 				8A4E68FB2172BDFE0050B5BF /* Surah.storyboard */,
 				8A77C55520D6454C009CBBC7 /* SurahTableViewController.swift */,
 				8A4E69002172BFF10050B5BF /* SurahViewController.swift */,
+				8A1EE584218656D8009F7DC9 /* SurahNotesController.swift */,
+				8A1EE586218F5B7A009F7DC9 /* SurahTableViewCell.swift */,
+				8A1EE588218F5CA8009F7DC9 /* SurahTableViewCell.xib */,
 			);
 			path = Surah;
 			sourceTree = "<group>";
@@ -163,6 +176,7 @@
 		8A4E69052172CC9C0050B5BF /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				8A1EE590218F7F19009F7DC9 /* OpenSans-Italic.ttf */,
 				8A94FA091EE352AD00DD5D9F /* Alkalami-Regular.ttf */,
 				8A4E690D2172D2100050B5BF /* AlBayan.ttf */,
 				8A4E690F2172D7140050B5BF /* AlBayan-Bold.otf */,
@@ -259,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				8AE275B7217643AF00D19EFD /* BorderView.swift */,
+				8A1EE58A218F6132009F7DC9 /* ViewConstants.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -358,7 +373,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A581AD91EE15D19009B18F3 /* LaunchScreen.storyboard in Resources */,
+				8A1EE589218F5CA8009F7DC9 /* SurahTableViewCell.xib in Resources */,
 				8A581AE11EE1694D009B18F3 /* quran-simple.xml in Resources */,
+				8A1EE591218F7F19009F7DC9 /* OpenSans-Italic.ttf in Resources */,
 				8A4E69102172D7210050B5BF /* AlBayan-Bold.otf in Resources */,
 				8AE275C4217B091600D19EFD /* Settings.storyboard in Resources */,
 				8A4E68FC2172BDFE0050B5BF /* Surah.storyboard in Resources */,
@@ -461,9 +478,12 @@
 				8A77C55620D6454C009CBBC7 /* SurahTableViewController.swift in Sources */,
 				8AE275BB217AF4C100D19EFD /* Translations.swift in Sources */,
 				8A581ACC1EE15D19009B18F3 /* AppDelegate.swift in Sources */,
+				8A1EE585218656D8009F7DC9 /* SurahNotesController.swift in Sources */,
+				8A1EE587218F5B7A009F7DC9 /* SurahTableViewCell.swift in Sources */,
 				8A4E68FA2172B8DD0050B5BF /* ParsingErrors.swift in Sources */,
 				8A6538B72180C41B000ABA7E /* CoreDataStack.swift in Sources */,
 				8A6538D6218187AE000ABA7E /* Bookmark+CoreDataProperties.swift in Sources */,
+				8A1EE58B218F6132009F7DC9 /* ViewConstants.swift in Sources */,
 				8A7FA25C20B3D72400991490 /* Quran.swift in Sources */,
 				8AE275C8217B0BE700D19EFD /* SettingsManager.swift in Sources */,
 				8AE275CC217BBCFB00D19EFD /* UIColor+Extensions.swift in Sources */,

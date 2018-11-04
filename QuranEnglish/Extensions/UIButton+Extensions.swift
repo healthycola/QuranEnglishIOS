@@ -18,4 +18,10 @@ extension UIButton {
         
         return button
     }
+    
+    func setupWithFontAwesome(text: FontAwesome, theme: Theme) {
+        self.tintColor = theme.primaryTint
+        self.titleLabel?.font = UIFont.fontAwesome(ofSize: 15, style: .solid)
+        self.setTitle(text.rawValue, for: .normal)
+    }
 }
